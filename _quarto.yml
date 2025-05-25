@@ -30,8 +30,9 @@ website:
 format:
   html:
     theme:
-      light: cosmo     # Más profesional y claro
-      dark: darkly     # Tema oscuro moderno
+      light: flatly
+      dark: darkly
+    prefer-dark: true   # <- ¡Esta línea es clave!
     toc: true
     toc-location: right
     toc-title: "Contenido"

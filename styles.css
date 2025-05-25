@@ -1,50 +1,90 @@
 /* styles.css */
 
+/* ============================== */
 /* Barra de navegación */
 .navbar {
-  background-color: #212529 !important;
-  border-bottom: 2px solid #17a2b8;
+  background-color: #1e1e2f !important;
+  border-bottom: 2px solid #00c8ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar .nav-link {
   color: #f8f9fa !important;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 .navbar .nav-link:hover {
-  color: #17a2b8 !important;
+  color: #00c8ff !important;
 }
 
-/* Fondo general y textos */
+/* ============================== */
+/* Fondo y cuerpo general */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa;
-  color: #212529;
+  line-height: 1.7;
+  background-color: #f4f6f9;
+  color: #2c2f36;
+  margin: 0;
+  padding: 0;
 }
 
+/* ============================== */
 /* Encabezados */
 h1, h2, h3, h4, h5, h6 {
-  color: #343a40;
+  color: #212529;
   font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  border-bottom: 3px solid #00c8ff;
+  padding-bottom: 0.5rem;
+}
+h2 {
+  border-left: 4px solid #00c8ff;
+  padding-left: 0.6rem;
 }
 
-/* Código y bloques de código */
+/* ============================== */
+/* Párrafos y enlaces */
+p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #005f99;
+}
+
+/* ============================== */
+/* Código en línea y bloques */
+code {
+  background-color: #eaeaea;
+  color: #d63384;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
 pre code {
   background-color: #2d2d2d;
   color: #f8f8f2;
   padding: 1em;
   border-radius: 6px;
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
   overflow-x: auto;
 }
-code {
-  background-color: #f1f1f1;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.95em;
-}
 
-/* Tabla */
+/* ============================== */
+/* Tablas */
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 table th, table td {
   border: 1px solid #dee2e6;
@@ -52,16 +92,62 @@ table th, table td {
   text-align: left;
 }
 table th {
-  background-color: #e9ecef;
-  color: #495057;
+  background-color: #343a40;
+  color: #ffffff;
+}
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
 }
 
+/* ============================== */
+/* Botones */
+button, .btn {
+  background-color: #00c8ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover, .btn:hover {
+  background-color: #00a3cc;
+}
+
+/* ============================== */
 /* Pie de página */
 .footer {
-  background-color: #212529;
-  color: white;
+  background-color: #1e1e2f;
+  color: #cccccc;
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
-  border-top: 2px solid #17a2b8;
+  border-top: 2px solid #00c8ff;
+  margin-top: 2rem;
+}
+
+
+.hero-text {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .highlight {
+  color: #00c8ff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #dddddd;
 }
