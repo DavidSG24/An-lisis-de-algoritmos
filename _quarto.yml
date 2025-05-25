@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  title: "Reportes"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: SegundoDavid_U1_T1.ipynb
+        text: Unidad 1
+      - href: SegundoDavid_U2_T1.ipynb
+        text: Unidad 2
+      - href: SegundoDavid_U3_T1.ipynb
+        text: Unidad 3
+      - href: SegundoDavid_U4_T1.ipynb
+        text: Unidad 4
+      - href: SegundoDavid_U5_T1.ipynb
+        text: Unidad 5
+      # - href: cambios.qmd
+      #   text: Cambios
+      # - href: referencias.qmd
+      #   text: Referencias
+
+format:
+  html:
+    theme:
+      light: flatly       # <- prueba aquí distintos Bootswatch themes
+      dark: darkly        # <- activa el boton de cambio de tema
+    toc: true              # activa la TOC lateral
+    toc-location: right    # posición “On this page”
+    toc-title: "En esta página"  # cambia “On this page” por lo que quieras
+    css: styles.css        # si quieres CSS extra
