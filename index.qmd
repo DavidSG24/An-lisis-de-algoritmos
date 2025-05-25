@@ -1,32 +1,68 @@
 ---
-title: "Bienvenido a Reportes de Algoritmos"
+
 format:
   html:
-    toc: false
+    toc: true
     page-layout: full
 ---
 
 <div class="hero-text">
-  <h1>Bienvenido a <span class="highlight">Reportes de Algoritmos</span></h1>
-  <p>Explora análisis, simulaciones y visualizaciones interactivas sobre el comportamiento y eficiencia de distintos algoritmos.</p>
+  <h1><span class="highlight">Reportes de Algoritmos</span></h1>
+  <p>Explora comparaciones, simulaciones y visualizaciones detalladas sobre algoritmos de ordenamiento, búsqueda, estructuras de datos e intersección de conjuntos.</p>
 </div>
 
 ---
 
-## 🔍 ¿Qué encontrarás aquí?
+## Acerca del sitio
 
-Este sitio contiene reportes interactivos desarrollados en Jupyter/Quarto, organizados por unidad, enfocados en:
+Este sitio web académico reúne una colección de reportes experimentales desarrollados como parte del curso *Análisis de algoritmos 2025-1*. Cada unidad contiene análisis comparativos de distintos enfoques algorítmicos, aplicados a problemas clásicos de la computación como ordenamiento, búsqueda, operaciones matriciales e intersección de conjuntos.
 
-- Comparación de órdenes de crecimiento
-- Visualización de tiempos de ejecución
-- Análisis de resultados por figura
-- Tablas resumen de simulación
-- Fundamentos teóricos bien referenciados
+Los reportes incluyen:
+- Implementaciones desde cero en Python
+- Simulaciones controladas con conjuntos de datos
+- Visualizaciones con gráficas, tablas y mapas de calor
+- Evaluación teórica y empírica del desempeño algorítmico
+
+El objetivo es ofrecer una visión práctica, crítica y completa del comportamiento de los algoritmos bajo distintos escenarios, para fortalecer el criterio técnico en la elección de estructuras y estrategias de programación.
 
 ---
 
-## 📁 Accede a los reportes por unidad
+## Unidad 1: Análisis de Crecimiento Algorítmico
 
-Usa el menú superior para explorar cada sección del proyecto.
+Este reporte explora y compara visualmente distintos órdenes de crecimiento (como O(1), O(log n), O(n log n), O(n²), O(n!), etc.) mediante simulaciones en Python. Se generan gráficas y tablas para ilustrar cómo cada función crece con el tamaño de la entrada, analizando también el impacto en tiempos de ejecución y costos computacionales.
+
+🔗 [Ir al reporte de la Unidad 1](SegundoDavid_U1_T1.ipynb)
+
+---
+
+## Unidad 2: Estructuras de Datos y Álgebra Lineal
+
+En este estudio se comparan dos métodos clásicos del álgebra lineal computacional: la multiplicación de matrices y la eliminación gaussiana (y su variante Gauss-Jordan). Se evalúan en términos de operaciones realizadas y tiempo de ejecución en matrices aleatorias de diferentes tamaños, identificando en qué contextos es más eficiente cada enfoque.
+
+🔗 [Ir al reporte de la Unidad 2](SegundoDavid_U2_T1.ipynb)
+
+---
+
+## Unidad 3: Algoritmos de Ordenamiento
+
+Este reporte presenta la implementación y evaluación de cinco métodos de ordenamiento: Heapsort, Mergesort, Quicksort, Bubblesort y ordenamiento con SkipList. Se analiza el rendimiento de cada algoritmo con diferentes niveles de desorden en los datos, considerando tanto el número de comparaciones como el tiempo requerido.
+
+🔗 [Ir al reporte de la Unidad 3](SegundoDavid_U3_T1.ipynb)
+
+---
+
+## Unidad 4: Algoritmos de Búsqueda por Comparación
+
+Se estudian distintas estrategias de búsqueda: secuencial, binaria acotada, búsquedas no acotadas (B1, B2) y mediante SkipList. El análisis incluye datos perturbados y ordenados, evaluando el desempeño con métricas como tiempo y número de comparaciones. Se discute la aplicabilidad de cada técnica según el tipo de datos.
+
+🔗 [Ir al reporte de la Unidad 4](SegundoDavid_U4_T1.ipynb)
+
+---
+
+## Unidad 5: Intersección y Unión de Conjuntos Ordenados
+
+Este documento compara algoritmos para calcular intersecciones de conjuntos ordenados: Melding, Baeza-Yates (con bisección, B1, B2) y Barbay-Kenyon. Se aplican sobre pares, tripletas y tetrapletas de listas para evaluar tiempo, comparaciones y tamaño de la intersección, utilizando gráficos boxplot para representar resultados.
+
+🔗 [Ir al reporte de la Unidad 5](SegundoDavid_U5_T1.ipynb)
 
 ---

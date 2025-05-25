@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Reportes"
-  favicon: favicon.ico   # Puedes agregar un ícono personalizado
+  favicon: favicon.ico   
   navbar:
     background: dark
     left:
@@ -20,7 +20,7 @@ website:
       - href: SegundoDavid_U5_T1.ipynb
         text: Unidad 5
       - href: cambios.ipynb
-        text: Cambios
+        text: Cambios implementados
   page-footer:
     left: "© 2025 David Segundo García"
     right: 
@@ -32,7 +32,7 @@ format:
     theme:
       light: flatly
       dark: darkly
-    prefer-dark: true   # <- ¡Esta línea es clave!
+    prefer-dark: true  
     toc: true
     toc-location: right
     toc-title: "Contenido"
