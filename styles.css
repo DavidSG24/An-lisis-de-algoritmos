@@ -60,23 +60,52 @@ a:hover {
 }
 
 /* ============================== */
-/* Código en línea y bloques */
+/* Código en línea */
 code {
   background-color: #eaeaea;
   color: #d63384;
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.95em;
+  font-family: 'Fira Code', Consolas, monospace;
 }
-pre code {
-  background-color: #2d2d2d;
-  color: #f8f8f2;
-  padding: 1em;
-  border-radius: 6px;
-  font-family: Consolas, monospace;
-  font-size: 0.9em;
-  line-height: 1.5;
+
+/* ============================== */
+/* Bloques de código */
+pre, pre code {
+  background-color: #1e1e28 !important;
+  color: #f1f1f1 !important;
+  border-radius: 10px;
+  padding: 1.2rem;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
   overflow-x: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================== */
+/* Botón copiar código */
+div.sourceCode {
+  position: relative;
+}
+div.sourceCode button.copy-to-clipboard-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+div.sourceCode button.copy-to-clipboard-button:hover {
+  opacity: 1;
+  background-color: #00c8ff;
+  color: #000;
 }
 
 /* ============================== */
@@ -127,7 +156,8 @@ button:hover, .btn:hover {
   margin-top: 2rem;
 }
 
-
+/* ============================== */
+/* Hero text de bienvenida */
 .hero-text {
   background-color: #1e1e2f;
   color: #ffffff;
@@ -137,16 +167,13 @@ button:hover, .btn:hover {
   margin-bottom: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
 .hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
 .hero-text .highlight {
   color: #00c8ff;
 }
-
 .hero-text p {
   font-size: 1.2rem;
   color: #dddddd;
