@@ -3,7 +3,9 @@ project:
 
 website:
   title: "Reportes"
+  favicon: favicon.ico   # Puedes agregar un ícono personalizado
   navbar:
+    background: dark
     left:
       - href: index.qmd
         text: Inicio
@@ -19,13 +21,20 @@ website:
         text: Unidad 5
       - href: cambios.ipynb
         text: Cambios
+  page-footer:
+    left: "© 2025 David Segundo García"
+    right: 
+      - icon: github
+        href: https://github.com/DavidSG24/An-lisis-de-algoritmos
 
 format:
   html:
     theme:
-      light: flatly       # <- prueba aquí distintos Bootswatch themes
-      dark: darkly        # <- activa el boton de cambio de tema
-    toc: true              # activa la TOC lateral
-    toc-location: right    # posición “On this page”
-    toc-title: "En esta página"  # cambia “On this page” por lo que quieras
-    css: styles.css        # si quieres CSS extra
+      light: cosmo     # Más profesional y claro
+      dark: darkly     # Tema oscuro moderno
+    toc: true
+    toc-location: right
+    toc-title: "Contenido"
+    css: styles.css
+    code-copy: true
+    code-overflow: wrap

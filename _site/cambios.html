@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cambios Realizados en Algoritmos de Ordenamiento del reporte 2 – Reportes</title>
+<title>Cambios realizados en los reportes para la unidad de Análisis de algoritmos 2025-1 – Reportes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -300,14 +300,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#merge_sort" id="toc-merge_sort" class="nav-link active" data-scroll-target="#merge_sort">1. <code>merge_sort</code></a></li>
-  <li><a href="#bubble_sort" id="toc-bubble_sort" class="nav-link" data-scroll-target="#bubble_sort">2. <code>bubble_sort</code></a></li>
-  <li><a href="#quick_sort" id="toc-quick_sort" class="nav-link" data-scroll-target="#quick_sort">3. <code>quick_sort</code></a></li>
-  <li><a href="#cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4" id="toc-cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4" class="nav-link" data-scroll-target="#cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4">Cambio en <code>search_with_skiplist</code> para uso correcto de SkipList del reporte 4</a>
-  <ul class="collapse">
-  <li><a href="#la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist." id="toc-la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist." class="nav-link" data-scroll-target="#la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist.">1. La función <code>search_with_skiplist</code> realizaba una búsqueda secuencial sobre una lista ordenada, ignorando la estructura jerárquica de la SkipList.</a></li>
-  <li><a href="#ausencia-de-la-referencia-al-artículo-de-by." id="toc-ausencia-de-la-referencia-al-artículo-de-by." class="nav-link" data-scroll-target="#ausencia-de-la-referencia-al-artículo-de-by.">Ausencia de la referencia al artículo de B&amp;Y.</a></li>
-  </ul></li>
+  <li><a href="#reporte-1-experimentos-y-análisis" id="toc-reporte-1-experimentos-y-análisis" class="nav-link active" data-scroll-target="#reporte-1-experimentos-y-análisis">Reporte 1: Experimentos y análisis</a></li>
+  <li><a href="#reporte-2-experimentos-y-análisis-de-estructuras-de-datos." id="toc-reporte-2-experimentos-y-análisis-de-estructuras-de-datos." class="nav-link" data-scroll-target="#reporte-2-experimentos-y-análisis-de-estructuras-de-datos.">Reporte 2: Experimentos y análisis de estructuras de datos.</a></li>
+  <li><a href="#reporte-3-experimentos-y-análisis-de-algoritmos-de-ordenamiento." id="toc-reporte-3-experimentos-y-análisis-de-algoritmos-de-ordenamiento." class="nav-link" data-scroll-target="#reporte-3-experimentos-y-análisis-de-algoritmos-de-ordenamiento.">Reporte 3: Experimentos y análisis de algoritmos de ordenamiento.</a></li>
+  <li><a href="#reporte-4-experimentos-y-análisis-de-algoritmos-de-búsqueda-por-comparación." id="toc-reporte-4-experimentos-y-análisis-de-algoritmos-de-búsqueda-por-comparación." class="nav-link" data-scroll-target="#reporte-4-experimentos-y-análisis-de-algoritmos-de-búsqueda-por-comparación.">Reporte 4: Experimentos y análisis de algoritmos de búsqueda por comparación.</a></li>
+  <li><a href="#reporte-5-algoritmos-de-intersección-y-unión-de-conjuntos-en-el-modelo-de-comparación" id="toc-reporte-5-algoritmos-de-intersección-y-unión-de-conjuntos-en-el-modelo-de-comparación" class="nav-link" data-scroll-target="#reporte-5-algoritmos-de-intersección-y-unión-de-conjuntos-en-el-modelo-de-comparación">Reporte 5: Algoritmos de intersección y unión de conjuntos en el modelo de comparación</a></li>
+  <li><a href="#nota." id="toc-nota." class="nav-link" data-scroll-target="#nota."><strong>Nota.</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -317,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cambios Realizados en Algoritmos de Ordenamiento del reporte 2</h1>
+<h1 class="title">Cambios realizados en los reportes para la unidad de <strong>Análisis de algoritmos 2025-1</strong></h1>
 </div>
 
 
@@ -334,45 +332,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="merge_sort" class="level2">
-<h2 class="anchored" data-anchor-id="merge_sort">1. <code>merge_sort</code></h2>
-<p><strong>Cambio:</strong><br>
-Reescrito para evitar copias innecesarias, usando una versión in-place con índices y lista auxiliar.</p>
-<p><strong>Mejora:</strong><br>
-- Menor uso de memoria. - Mejor rendimiento en listas grandes.</p>
-</section>
-<section id="bubble_sort" class="level2">
-<h2 class="anchored" data-anchor-id="bubble_sort">2. <code>bubble_sort</code></h2>
-<p><strong>Cambio:</strong><br>
-Ahora es adaptativo: se detiene si no hubo intercambios en una pasada.</p>
-<p><strong>Mejora:</strong><br>
-- Menor tiempo en listas ya ordenadas. - Mejor caso reducido a O(n).</p>
-</section>
-<section id="quick_sort" class="level2">
-<h2 class="anchored" data-anchor-id="quick_sort">3. <code>quick_sort</code></h2>
-<p><strong>Cambio:</strong><br>
-Se implementó selección de pivote aleatorio.</p>
-<p><strong>Mejora:</strong><br>
-- Menor riesgo del peor caso O(n²). - Rendimiento más estable en listas con orden parcial.</p>
+<section id="reporte-1-experimentos-y-análisis" class="level1">
+<h1>Reporte 1: Experimentos y análisis</h1>
+<ol type="1">
+<li><p>Aunque en las observaciones se sugiere eliminar las instrucciones de la actividad, se ha decidido mantenerlas debido a que proporcionan un marco de referencia útil para comprender el enfoque del trabajo desarrollado.</p></li>
+<li><p>La redacción fue corregida mediante la eliminación del exceso de viñetas y la reestructuración del contenido en párrafos coherentes, lo que mejora la continuidad y claridad del texto.</p></li>
+<li><p>Las conclusiones fueron replanteadas con el fin de reducir la dependencia de citas textuales y fortalecer el análisis propio.</p></li>
+<li><p>Las referencias bibliográficas fueron ordenadas alfabéticamente conforme a los lineamientos establecidos.</p></li>
+<li><p>Se reestructuraron los títulos, encabezados y secciones para asegurar una presentación uniforme y acorde al formato requerido para el reporte.</p></li>
+</ol>
 <hr>
 </section>
-<section id="cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4" class="level2">
-<h2 class="anchored" data-anchor-id="cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4">Cambio en <code>search_with_skiplist</code> para uso correcto de SkipList del reporte 4</h2>
-<section id="la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist." class="level3">
-<h3 class="anchored" data-anchor-id="la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist.">1. La función <code>search_with_skiplist</code> realizaba una búsqueda secuencial sobre una lista ordenada, ignorando la estructura jerárquica de la SkipList.</h3>
-<p><strong>Cambio:</strong><br>
-- Se agregó el método <code>buscar()</code> a la clase <code>SkipListOrden</code> para usar los niveles de la estructura en la búsqueda. - <code>search_with_skiplist</code> ahora llama directamente a <code>buscar()</code>.</p>
-<p><strong>Mejora:</strong><br>
-La SkipList ahora funciona correctamente con eficiencia O(log n) y se diferencia claramente de la búsqueda secuencial. Además, las referencias teóricas están completas y correctamente citadas.</p>
+<section id="reporte-2-experimentos-y-análisis-de-estructuras-de-datos." class="level1">
+<h1>Reporte 2: Experimentos y análisis de estructuras de datos.</h1>
+<ol type="1">
+<li><p>El algoritmo merge_sort fue reescrito para optimizar su eficiencia. En lugar de utilizar múltiples copias de sublistas, se implementó una versión in-place que opera mediante el uso de índices y una lista auxiliar. Esta modificación reduce significativamente el uso de memoria y mejora el rendimiento, especialmente al trabajar con listas de gran tamaño.</p></li>
+<li><p>En el caso de bubble_sort, se introdujo una mejora adaptativa que permite detener la ejecución anticipadamente cuando no se detectan intercambios durante una pasada completa. Esta optimización disminuye considerablemente el tiempo de ejecución en listas que ya se encuentran ordenadas, logrando un mejor caso con complejidad O(n).</p></li>
+<li><p>Para quick_sort, se modificó la lógica de selección del pivote, incorporando una estrategia aleatoria. Esta elección reduce el riesgo de caer en el peor caso con complejidad O(n²) al procesar listas parcialmente ordenadas, lo que se traduce en un rendimiento más estable y eficiente en la práctica.</p></li>
+</ol>
+<hr>
 </section>
-<section id="ausencia-de-la-referencia-al-artículo-de-by." class="level3">
-<h3 class="anchored" data-anchor-id="ausencia-de-la-referencia-al-artículo-de-by.">Ausencia de la referencia al artículo de B&amp;Y.</h3>
-<p><strong>Cambio:</strong><br>
-- Se incluyó en las referencias el artículo de Bentley &amp; Yao (1976), y se citó en el análisis de los algoritmos no acotados.</p>
-<p>Asi mismo, los cambios en cuanto a código se ven reflejados sobre el reporte al tener las funciones con observaciones comentadas para vizualizar versiones anteriores.</p>
+<section id="reporte-3-experimentos-y-análisis-de-algoritmos-de-ordenamiento." class="level1">
+<h1>Reporte 3: Experimentos y análisis de algoritmos de ordenamiento.</h1>
+<ol type="1">
+<li>En este reporte no se realizaron observaciones específicas relacionadas con el contenido técnico. No obstante, se atendieron recomendaciones sobre la presentación formal del documento. Por ello, se reestructuraron los títulos, encabezados y secciones con el objetivo de asegurar una organización clara, coherente y adecuada al formato requerido.</li>
+</ol>
+</section>
+<section id="reporte-4-experimentos-y-análisis-de-algoritmos-de-búsqueda-por-comparación." class="level1">
+<h1>Reporte 4: Experimentos y análisis de algoritmos de búsqueda por comparación.</h1>
+<ol type="1">
+<li><p>La función search_with_skiplist fue corregida para aprovechar la estructura jerárquica de la SkipList. Se agregó el método buscar() a la clase SkipListOrden, y ahora la búsqueda se realiza con eficiencia O(log n), diferenciándose de la búsqueda secuencial. Las referencias teóricas se citaron correctamente.</p></li>
+<li><p>Se añadió la referencia al artículo de Bentley &amp; Yao (1976), la cual se incorporó en el análisis de los algoritmos no acotados, fortaleciendo el respaldo académico del reporte.</p></li>
+<li><p>Se reestructuraron los títulos, encabezados y secciones para asegurar una presentación clara y acorde al formato establecido.</p></li>
+</ol>
+</section>
+<section id="reporte-5-algoritmos-de-intersección-y-unión-de-conjuntos-en-el-modelo-de-comparación" class="level1">
+<h1>Reporte 5: Algoritmos de intersección y unión de conjuntos en el modelo de comparación</h1>
+<p>Este reporte fue entregado al mismo tiempo que el presente sitio por lo cual aun no cuenta con observaciones</p>
+</section>
+<section id="nota." class="level1">
+<h1><strong>Nota.</strong></h1>
+<p>Los cambios en cuanto a código se ven reflejados sobre cada reporte al tener las funciones con observaciones comentadas para visualizar versiones anteriores.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
