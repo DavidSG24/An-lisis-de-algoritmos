@@ -368,6 +368,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><strong>Introducción</strong></a></li>
+  <li><a href="#instrucciones" id="toc-instrucciones" class="nav-link" data-scroll-target="#instrucciones">Instrucciones</a></li>
   <li><a href="#solución" id="toc-solución" class="nav-link" data-scroll-target="#solución"><strong>Solución</strong></a>
   <ul class="collapse">
   <li><a href="#definimos-las-funciones-que-usaremos" id="toc-definimos-las-funciones-que-usaremos" class="nav-link" data-scroll-target="#definimos-las-funciones-que-usaremos"><strong>Definimos las funciones que usaremos</strong>:</a></li>
@@ -393,11 +394,11 @@ window.Quarto = {
 
 
 <h1>
+<b>Reporte Escrito: Experimentos y análisis</b>
+</h1>
+<h1>
 <b>Alumno: David Segundo Garcia</b>
 </h1>
-<h2 class="anchored">
-<b>Reporte Escrito: Experimentos y análisis</b>
-</h2>
 <section id="introducción" class="level1">
 <h1><strong>Introducción</strong></h1>
 <p>El estudio de la eficiencia algorítmica es crucial en la informática, ya que permite evaluar el comportamiento de los algoritmos ante diferentes volúmenes de datos. Este análisis no solo ayuda a seleccionar la mejor opción para un problema determinado, sino que también proporciona información sobre la escalabilidad de las soluciones computacionales. Un algoritmo eficiente puede significar la diferencia entre una ejecución en segundos o en horas, dependiendo del crecimiento del tamaño de la entrada.</p>
@@ -405,11 +406,38 @@ window.Quarto = {
 <p>En este trabajo, realizaremos un análisis comparativo de algoritmos clásicos de búsqueda y ordenamiento, aplicando mediciones experimentales y teóricas para evaluar su eficiencia. Se examinará el impacto del tamaño de la entrada en el tiempo de ejecución y el consumo de memoria, identificando cuáles estrategias son más adecuadas para diferentes contextos computacionales. Esto permitirá obtener una visión clara de las ventajas y limitaciones de cada enfoque en términos de rendimiento y escalabilidad.</p>
 <hr>
 </section>
+<section id="instrucciones" class="level1">
+<h1>Instrucciones</h1>
+<ol type="1">
+<li><p><strong>Compara</strong> mediante simulación en un notebook de Jupyter o Quarto los siguientes órdenes de crecimiento:</p>
+<ul>
+<li>( O(1) ) vs ( O(n) )<br>
+</li>
+<li>( O(n) ) vs ( O(n n) )<br>
+</li>
+<li>( O(n^2) ) vs ( O(n^3) )<br>
+</li>
+<li>( O(a^n) ) vs ( O(n!) )<br>
+</li>
+<li>( O(n!) ) vs ( O(n^n) )</li>
+</ul></li>
+<li><p><strong>Escoge</strong> los rangos adecuados para cada comparación, ya que como será evidente después, no es práctico fijar los rangos.</p></li>
+<li><p><strong>Crea</strong> una figura por comparación, i.e., teniendo como resultado cinco figuras.</p></li>
+<li><p><strong>Discute</strong> lo observado por figura.</p></li>
+<li><p><strong>Crea</strong> una tabla donde muestre tiempos de ejecución simulados para algoritmos ficticios que tengan los órdenes de crecimiento anteriores, suponiendo que cada operación tiene un costo de 1 nanosegundo.</p>
+<ul>
+<li>Usa diferentes tamaños de entrada ( n = 100 ); ( n = 1000 ); ( n = 10000 ); ( n = 100000 ).<br>
+</li>
+<li>Nota que para algunas fórmulas, los números pueden ser muy grandes (usa el foro de dudas si llegas a tener problemas).</li>
+</ul></li>
+<li><p><strong>Discute</strong> las implicaciones de costos de cómputo necesarios para manipular grandes volúmenes de información, en el mismo notebook.</p></li>
+</ol>
+</section>
 <section id="solución" class="level1">
 <h1><strong>Solución</strong></h1>
 <section id="definimos-las-funciones-que-usaremos" class="level2">
 <h2 class="anchored" data-anchor-id="definimos-las-funciones-que-usaremos"><strong>Definimos las funciones que usaremos</strong>:</h2>
-<div id="cell-4" class="cell">
+<div id="cell-5" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">Este notebook analiza, compara y grafica órdenes de crecimiento algorítmico,</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">evaluando su impacto computacional en diferentes escenarios.</span></span>
@@ -420,7 +448,7 @@ window.Quarto = {
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-5" class="cell">
+<div id="cell-6" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># O(1) - Tiempo constante</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> constante(n: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Retorna un valor constante de 1.</span></span>
@@ -537,7 +565,7 @@ window.Quarto = {
 <p>1.- <span class="math inline">\(O(1)\)</span> vs <span class="math inline">\(O(\log n)\)</span></p>
 <p>Para esta comparación, elegimos un rango de valores relativamente pequeño. La razón es que la función <span class="math inline">\(O(1)\)</span> tiene un crecimiento constante sin importar el tamaño de la entrada, mientras que <span class="math inline">\(O(\log n)\)</span> crece de manera muy lenta a medida que <span class="math inline">\(n\)</span> aumenta. Dado que el crecimiento logarítmico es mucho menor que el lineal, podemos visualizar ambas funciones en un mismo gráfico sin la necesidad de un rango de valores extremadamente grande.</p>
 <p>Esta comparación nos permite observar cómo, incluso para valores grandes de <span class="math inline">\(n\)</span>, la diferencia entre <span class="math inline">\(O(1)\)</span> y <span class="math inline">\(O(\log n)\)</span> sigue siendo significativa.</p>
-<div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:472}}" data-outputid="8b9fd9f1-1faf-480e-fffa-db539c6472b1">
+<div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:472}}" data-outputid="8b9fd9f1-1faf-480e-fffa-db539c6472b1">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">100</span>)  <span class="co"># Rango de 1 a 99</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -571,7 +599,7 @@ window.Quarto = {
 <p>La diferencia clave entre ambas funciones radica en la forma en que escalan con el tamaño de la entrada, ya que mientras <span class="math inline">\(O(1)\)</span> mantiene un tiempo de ejecución constante, <span class="math inline">\(O(\log n)\)</span> presenta un crecimiento ligero pero progresivo. En términos prácticos, para valores pequeños de <span class="math inline">\(n\)</span>, la diferencia entre ambas funciones es casi imperceptible; sin embargo, a medida que <span class="math inline">\(n\)</span> aumenta considerablemente, <span class="math inline">\(O(1)\)</span> destaca por su rapidez y eficiencia, mientras que <span class="math inline">\(O(\log n)\)</span> sigue siendo competitivo, aunque con un incremento gradual en el tiempo de ejecución. La elección entre estas funciones depende del contexto y del tamaño de la entrada, pues si la prioridad es maximizar la eficiencia temporal, <span class="math inline">\(O(1)\)</span> es la mejor opción, pero si se busca un equilibrio entre escalabilidad y rendimiento en volúmenes de datos más grandes, <span class="math inline">\(O(\log n)\)</span> sigue siendo una alternativa viable y eficiente.</p>
 <p>2.- <em><span class="math inline">\(O(n)\)</span> vs <span class="math inline">\(O(n \log n)\)</span></em></p>
 <p>Para esta comparación, utilizamos un rango de valores más amplio, ya que tanto <span class="math inline">\(O(n)\)</span> como <span class="math inline">\(O(n \log n)\)</span> presentan diferencias más notables a medida que <span class="math inline">\(n\)</span> aumenta. Esto permite visualizar con mayor claridad cómo crecen ambas funciones y en qué punto comienza a ser significativa la diferencia en sus tiempos de ejecución.</p>
-<div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="f3d9da93-f817-41ce-d8aa-26835844e1bd">
+<div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="f3d9da93-f817-41ce-d8aa-26835844e1bd">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">1000</span>)  <span class="co"># Rango de 1 a 999</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -603,7 +631,7 @@ window.Quarto = {
 <p>Aunque ambas funciones crecen con el tamaño de la entrada, <span class="math inline">\(O(n \log n)\)</span> lo hace a una velocidad mayor que <span class="math inline">\(O(n)\)</span>, por lo que, si bien en entradas pequeñas el tiempo de ejecución es similar, a medida que <span class="math inline">\(n\)</span> aumenta, <span class="math inline">\(O(n \log n)\)</span> demanda más recursos computacionales. En términos prácticos, <span class="math inline">\(O(n)\)</span> es preferible cuando se busca eficiencia y predictibilidad, mientras que <span class="math inline">\(O(n \log n)\)</span> es más adecuado en problemas que requieren estrategias de ordenamiento o dividir y conquistar, aunque con un costo computacional mayor.</p>
 <p><strong>3</strong>.- <span class="math inline">\(O(n^2)\)</span> vs <span class="math inline">\(O(n^3)\)</span></p>
 <p>En este caso, optamos por un rango de valores más reducido en comparación con los anteriores, debido a que ambas funciones presentan un crecimiento significativamente más acelerado. Dado que su tasa de incremento es rápida, no es necesario utilizar valores demasiado grandes de <span class="math inline">\(n\)</span> para visualizar claramente la diferencia en su comportamiento.</p>
-<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:476}}" data-outputid="76af1e85-66eb-442b-ccc7-135d186ecbc6">
+<div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:476}}" data-outputid="76af1e85-66eb-442b-ccc7-135d186ecbc6">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">200</span>)  <span class="co"># Rango de 1 a 199</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -635,7 +663,7 @@ window.Quarto = {
 <p>Si bien ambas funciones exhiben un crecimiento acelerado, la diferencia en sus tasas de incremento se hace evidente conforme aumenta <span class="math inline">\(n\)</span>, pues mientras <span class="math inline">\(O(n^2)\)</span> mantiene un crecimiento controlado y moderado, la función <span class="math inline">\(O(n^3)\)</span> se vuelve prohibitiva rápidamente en términos de tiempo de ejecución, lo que la hace impráctica para valores grandes de <span class="math inline">\(n\)</span>. Aunque en entradas pequeñas la diferencia en rendimiento puede no ser crítica, a medida que el tamaño de los datos crece, el impacto del término cúbico se vuelve dominante, incrementando significativamente el costo computacional y volviendo esencial la selección de un algoritmo más eficiente en aplicaciones donde el rendimiento sea un factor determinante.</p>
 <p>4.- <span class="math inline">\(O(a^n)\)</span> vs <span class="math inline">\(O(n!)\)</span></p>
 <p>En este caso, es necesario utilizar un rango de valores considerablemente pequeño, ya que la función factorial <span class="math inline">\(O(n!)\)</span> crece a un ritmo extremadamente acelerado. Para garantizar una comparación clara y comprensible, se ha establecido un valor fijo de <span class="math inline">\(a\)</span>, asignándole el valor de <span class="math inline">\(5\)</span> con el objetivo de evitar que el crecimiento sea trivial y proporcionar un ejemplo representativo del comportamiento de ambas funciones.</p>
-<div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="67757ae5-c2d9-4acd-ad2e-4ca939ee2d27">
+<div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="67757ae5-c2d9-4acd-ad2e-4ca939ee2d27">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)  <span class="co"># Rango de 1 a 5 debido al crecimiento acelerado de O(n!)</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -667,7 +695,7 @@ window.Quarto = {
 <p>Aunque ambas funciones experimentan un crecimiento extremadamente rápido, la función <span class="math inline">\(O(n!)\)</span> incrementa su tiempo de ejecución a un ritmo considerablemente superior al de <span class="math inline">\(O(a^n)\)</span>, lo que la hace ineficiente incluso para valores moderados de <span class="math inline">\(n\)</span>. En términos prácticos, es preferible evitar algoritmos con complejidad factorial siempre que sea posible, ya que su costo computacional se vuelve prohibitivo en muy poco tiempo, mientras que <span class="math inline">\(O(a^n)\)</span> podría ser aceptable en ciertos escenarios donde <span class="math inline">\(n\)</span> no sea excesivamente grande; no obstante, en situaciones donde se requiera manejar entradas de gran tamaño, es recomendable buscar soluciones con una complejidad menor.</p>
 <p>5.- <span class="math inline">\(O(n!)\)</span> vs <span class="math inline">\(O(n^n)\)</span></p>
 <p>Al igual que en el caso anterior, es necesario utilizar un rango de valores reducido, ya que estas funciones presentan las tasas de crecimiento más elevadas analizadas hasta el momento. En particular, <span class="math inline">\(O(n^n)\)</span> exhibe un incremento aún más acelerado que <span class="math inline">\(O(n!)\)</span>, lo que hace que su tiempo de ejecución se dispare rápidamente conforme aumenta <span class="math inline">\(n\)</span>.</p>
-<div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="7c4f446e-2380-4b8e-c94a-77f7ed987043">
+<div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="7c4f446e-2380-4b8e-c94a-77f7ed987043">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)  <span class="co"># Rango de 1 a 5 debido al crecimiento extremadamente rápido de O(n^n)</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -702,7 +730,7 @@ window.Quarto = {
 <li>Usa diferentes tamaños de entrada ( n = 100 ); ( n = 1000 ); ( n = 10000 ) y ( n = 100000 ).</li>
 <li>Nota que para algunas fórmulas, los números pueden ser muy grandes (usa el foro de dudas si llegas a tener problemas).</li>
 </ul>
-<div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:175}}" data-outputid="2d1705bb-04a7-450a-f837-353e9a3c1a07">
+<div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:175}}" data-outputid="2d1705bb-04a7-450a-f837-353e9a3c1a07">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos los valores de entrada a evaluar</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">100</span>, <span class="dv">1000</span>]</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
