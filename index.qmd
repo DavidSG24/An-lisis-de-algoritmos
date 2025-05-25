@@ -1,5 +1,5 @@
 ---
-
+title: ""
 format:
   html:
     toc: true
@@ -31,7 +31,7 @@ El objetivo es ofrecer una visión práctica, crítica y completa del comportami
 
 Este reporte explora y compara visualmente distintos órdenes de crecimiento (como O(1), O(log n), O(n log n), O(n²), O(n!), etc.) mediante simulaciones en Python. Se generan gráficas y tablas para ilustrar cómo cada función crece con el tamaño de la entrada, analizando también el impacto en tiempos de ejecución y costos computacionales.
 
-🔗 [Ir al reporte de la Unidad 1](SegundoDavid_U1_T1.ipynb)
+[Ir al reporte de la Unidad 1](SegundoDavid_U1_T1.ipynb)
 
 ---
 
