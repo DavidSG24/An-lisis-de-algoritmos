@@ -165,7 +165,7 @@
     "href": "cambios.html",
     "title": "Cambios realizados en los reportes para la unidad de Análisis de algoritmos 2025-1",
     "section": "",
-    "text": "Reporte 1: Experimentos y análisis\n\nAunque en las observaciones se sugiere eliminar las instrucciones de la actividad, se ha decidido mantenerlas debido a que proporcionan un marco de referencia útil para comprender el enfoque del trabajo desarrollado.\nLa redacción fue corregida mediante la eliminación del exceso de viñetas y la reestructuración del contenido en párrafos coherentes, lo que mejora la continuidad y claridad del texto.\nLas conclusiones fueron replanteadas con el fin de reducir la dependencia de citas textuales y fortalecer el análisis propio.\nLas referencias bibliográficas fueron ordenadas alfabéticamente conforme a los lineamientos establecidos.\nSe reestructuraron los títulos, encabezados y secciones para asegurar una presentación uniforme y acorde al formato requerido para el reporte.\n\n\n\n\nReporte 2: Experimentos y análisis de estructuras de datos.\n\nEl algoritmo merge_sort fue reescrito para optimizar su eficiencia. En lugar de utilizar múltiples copias de sublistas, se implementó una versión in-place que opera mediante el uso de índices y una lista auxiliar. Esta modificación reduce significativamente el uso de memoria y mejora el rendimiento, especialmente al trabajar con listas de gran tamaño.\nEn el caso de bubble_sort, se introdujo una mejora adaptativa que permite detener la ejecución anticipadamente cuando no se detectan intercambios durante una pasada completa. Esta optimización disminuye considerablemente el tiempo de ejecución en listas que ya se encuentran ordenadas, logrando un mejor caso con complejidad O(n).\nPara quick_sort, se modificó la lógica de selección del pivote, incorporando una estrategia aleatoria. Esta elección reduce el riesgo de caer en el peor caso con complejidad O(n²) al procesar listas parcialmente ordenadas, lo que se traduce en un rendimiento más estable y eficiente en la práctica.\n\n\n\n\nReporte 3: Experimentos y análisis de algoritmos de ordenamiento.\n\nEn este reporte no se realizaron observaciones específicas relacionadas con el contenido técnico. No obstante, se atendieron recomendaciones sobre la presentación formal del documento. Por ello, se reestructuraron los títulos, encabezados y secciones con el objetivo de asegurar una organización clara, coherente y adecuada al formato requerido.\n\n\n\nReporte 4: Experimentos y análisis de algoritmos de búsqueda por comparación.\n\nLa función search_with_skiplist fue corregida para aprovechar la estructura jerárquica de la SkipList. Se agregó el método buscar() a la clase SkipListOrden, y ahora la búsqueda se realiza con eficiencia O(log n), diferenciándose de la búsqueda secuencial. Las referencias teóricas se citaron correctamente.\nSe añadió la referencia al artículo de Bentley & Yao (1976), la cual se incorporó en el análisis de los algoritmos no acotados, fortaleciendo el respaldo académico del reporte.\nSe reestructuraron los títulos, encabezados y secciones para asegurar una presentación clara y acorde al formato establecido.\n\n\n\nReporte 5: Algoritmos de intersección y unión de conjuntos en el modelo de comparación\nEste reporte fue entregado al mismo tiempo que el presente sitio por lo cual aun no cuenta con observaciones\n\n\nNota.\nLos cambios en cuanto a código se ven reflejados sobre cada reporte al tener las funciones con observaciones comentadas para visualizar versiones anteriores."
+    "text": "Reporte 1: Experimentos y análisis\n\nAunque en las observaciones se sugiere eliminar las instrucciones de la actividad, se ha decidido mantenerlas debido a que proporcionan un marco de referencia útil para comprender el enfoque del trabajo desarrollado.\nLa redacción fue corregida mediante la eliminación del exceso de viñetas y la reestructuración del contenido en párrafos coherentes, lo que mejora la continuidad y claridad del texto.\nLas conclusiones fueron replanteadas con el fin de reducir la dependencia de citas textuales y fortalecer el análisis propio.\nLas referencias bibliográficas fueron ordenadas alfabéticamente conforme a los lineamientos establecidos.\nSe reestructuraron los títulos, encabezados y secciones para asegurar una presentación uniforme y acorde al formato requerido para el reporte.\n\n\n\n\nReporte 2: Experimentos y análisis de estructuras de datos.\n\nEl algoritmo merge_sort fue reescrito para optimizar su eficiencia. En lugar de utilizar múltiples copias de sublistas, se implementó una versión in-place que opera mediante el uso de índices y una lista auxiliar. Esta modificación reduce significativamente el uso de memoria y mejora el rendimiento, especialmente al trabajar con listas de gran tamaño.\nEn el caso de bubble_sort, se introdujo una mejora adaptativa que permite detener la ejecución anticipadamente cuando no se detectan intercambios durante una pasada completa. Esta optimización disminuye considerablemente el tiempo de ejecución en listas que ya se encuentran ordenadas, logrando un mejor caso con complejidad O(n).\nPara quick_sort, se modificó la lógica de selección del pivote, incorporando una estrategia aleatoria. Esta elección reduce el riesgo de caer en el peor caso con complejidad O(n²) al procesar listas parcialmente ordenadas, lo que se traduce en un rendimiento más estable y eficiente en la práctica.\n\n\n\n\nReporte 3: Experimentos y análisis de algoritmos de ordenamiento.\n\nEn este reporte no se realizaron observaciones específicas relacionadas con el contenido técnico. No obstante, se atendieron recomendaciones sobre la presentación formal del documento. Por ello, se reestructuraron los títulos, encabezados y secciones con el objetivo de asegurar una organización clara, coherente y adecuada al formato requerido.\n\n\n\nReporte 4: Experimentos y análisis de algoritmos de búsqueda por comparación.\n\nLa función search_with_skiplist fue corregida para aprovechar la estructura jerárquica de la SkipList. Se agregó el método buscar() a la clase SkipListOrden, y ahora la búsqueda se realiza con eficiencia O(log n), diferenciándose de la búsqueda secuencial. Las referencias teóricas se citaron correctamente.\nSe añadió la referencia al artículo de Bentley & Yao (1976), la cual se incorporó en el análisis de los algoritmos no acotados, fortaleciendo el respaldo académico del reporte.\nSe reestructuraron los títulos, encabezados y secciones para asegurar una presentación clara y acorde al formato establecido.\n\n\n\nReporte 5: Algoritmos de intersección y unión de conjuntos en el modelo de comparación\nEste reporte fue entregado al mismo tiempo que el presente sitio por lo cual aun no cuenta con observaciones.\n\n\nNota.\nLos cambios en cuanto a código se ven reflejados sobre cada reporte al tener las funciones con observaciones comentadas para visualizar versiones anteriores."
   },
   {
     "objectID": "Algoritmos.html",
@@ -184,23 +184,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bienvenido a Reportes de Algoritmos",
+    "title": "\nReportes de Algoritmos\n",
     "section": "",
-    "text": "Explora análisis, simulaciones y visualizaciones interactivas sobre el comportamiento y eficiencia de distintos algoritmos."
+    "text": "format: html: toc: true page-layout: full —"
   },
   {
-    "objectID": "index.html#qué-encontrarás-aquí",
-    "href": "index.html#qué-encontrarás-aquí",
-    "title": "Bienvenido a Reportes de Algoritmos",
-    "section": "🔍 ¿Qué encontrarás aquí?",
-    "text": "🔍 ¿Qué encontrarás aquí?\nEste sitio contiene reportes interactivos desarrollados en Jupyter/Quarto, organizados por unidad, enfocados en:\n\nComparación de órdenes de crecimiento\nVisualización de tiempos de ejecución\nAnálisis de resultados por figura\nTablas resumen de simulación\nFundamentos teóricos bien referenciados"
+    "objectID": "index.html#acerca-del-sitio",
+    "href": "index.html#acerca-del-sitio",
+    "title": "\nReportes de Algoritmos\n",
+    "section": "Acerca del sitio",
+    "text": "Acerca del sitio\nEste sitio web académico reúne una colección de reportes experimentales desarrollados como parte del curso Análisis de algoritmos 2025-1. Cada unidad contiene análisis comparativos de distintos enfoques algorítmicos, aplicados a problemas clásicos de la computación como ordenamiento, búsqueda, operaciones matriciales e intersección de conjuntos.\nLos reportes incluyen: - Implementaciones desde cero en Python - Simulaciones controladas con conjuntos de datos - Visualizaciones con gráficas, tablas y mapas de calor - Evaluación teórica y empírica del desempeño algorítmico\nEl objetivo es ofrecer una visión práctica, crítica y completa del comportamiento de los algoritmos bajo distintos escenarios, para fortalecer el criterio técnico en la elección de estructuras y estrategias de programación."
   },
   {
-    "objectID": "index.html#accede-a-los-reportes-por-unidad",
-    "href": "index.html#accede-a-los-reportes-por-unidad",
-    "title": "Bienvenido a Reportes de Algoritmos",
-    "section": "📁 Accede a los reportes por unidad",
-    "text": "📁 Accede a los reportes por unidad\nUsa el menú superior para explorar cada sección del proyecto."
+    "objectID": "index.html#unidad-1-análisis-de-crecimiento-algorítmico",
+    "href": "index.html#unidad-1-análisis-de-crecimiento-algorítmico",
+    "title": "\nReportes de Algoritmos\n",
+    "section": "Unidad 1: Análisis de Crecimiento Algorítmico",
+    "text": "Unidad 1: Análisis de Crecimiento Algorítmico\nEste reporte explora y compara visualmente distintos órdenes de crecimiento (como O(1), O(log n), O(n log n), O(n²), O(n!), etc.) mediante simulaciones en Python. Se generan gráficas y tablas para ilustrar cómo cada función crece con el tamaño de la entrada, analizando también el impacto en tiempos de ejecución y costos computacionales.\n🔗 Ir al reporte de la Unidad 1"
+  },
+  {
+    "objectID": "index.html#unidad-2-estructuras-de-datos-y-álgebra-lineal",
+    "href": "index.html#unidad-2-estructuras-de-datos-y-álgebra-lineal",
+    "title": "\nReportes de Algoritmos\n",
+    "section": "Unidad 2: Estructuras de Datos y Álgebra Lineal",
+    "text": "Unidad 2: Estructuras de Datos y Álgebra Lineal\nEn este estudio se comparan dos métodos clásicos del álgebra lineal computacional: la multiplicación de matrices y la eliminación gaussiana (y su variante Gauss-Jordan). Se evalúan en términos de operaciones realizadas y tiempo de ejecución en matrices aleatorias de diferentes tamaños, identificando en qué contextos es más eficiente cada enfoque.\n🔗 Ir al reporte de la Unidad 2"
+  },
+  {
+    "objectID": "index.html#unidad-3-algoritmos-de-ordenamiento",
+    "href": "index.html#unidad-3-algoritmos-de-ordenamiento",
+    "title": "\nReportes de Algoritmos\n",
+    "section": "Unidad 3: Algoritmos de Ordenamiento",
+    "text": "Unidad 3: Algoritmos de Ordenamiento\nEste reporte presenta la implementación y evaluación de cinco métodos de ordenamiento: Heapsort, Mergesort, Quicksort, Bubblesort y ordenamiento con SkipList. Se analiza el rendimiento de cada algoritmo con diferentes niveles de desorden en los datos, considerando tanto el número de comparaciones como el tiempo requerido.\n🔗 Ir al reporte de la Unidad 3"
+  },
+  {
+    "objectID": "index.html#unidad-4-algoritmos-de-búsqueda-por-comparación",
+    "href": "index.html#unidad-4-algoritmos-de-búsqueda-por-comparación",
+    "title": "\nReportes de Algoritmos\n",
+    "section": "Unidad 4: Algoritmos de Búsqueda por Comparación",
+    "text": "Unidad 4: Algoritmos de Búsqueda por Comparación\nSe estudian distintas estrategias de búsqueda: secuencial, binaria acotada, búsquedas no acotadas (B1, B2) y mediante SkipList. El análisis incluye datos perturbados y ordenados, evaluando el desempeño con métricas como tiempo y número de comparaciones. Se discute la aplicabilidad de cada técnica según el tipo de datos.\n🔗 Ir al reporte de la Unidad 4"
+  },
+  {
+    "objectID": "index.html#unidad-5-intersección-y-unión-de-conjuntos-ordenados",
+    "href": "index.html#unidad-5-intersección-y-unión-de-conjuntos-ordenados",
+    "title": "\nReportes de Algoritmos\n",
+    "section": "Unidad 5: Intersección y Unión de Conjuntos Ordenados",
+    "text": "Unidad 5: Intersección y Unión de Conjuntos Ordenados\nEste documento compara algoritmos para calcular intersecciones de conjuntos ordenados: Melding, Baeza-Yates (con bisección, B1, B2) y Barbay-Kenyon. Se aplican sobre pares, tripletas y tetrapletas de listas para evaluar tiempo, comparaciones y tamaño de la intersección, utilizando gráficos boxplot para representar resultados.\n🔗 Ir al reporte de la Unidad 5"
   },
   {
     "objectID": "SegundoDavid_U2_T1.html",
