@@ -327,23 +327,23 @@ window.Quarto = {
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./SegundoDavid_U1_T1"> 
+    <a class="nav-link" href="./SegundoDavid_U1_T1.html"> 
 <span class="menu-text">Unidad 1</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./SegundoDavid_U2_T1"> 
+    <a class="nav-link active" href="./SegundoDavid_U2_T1.html" aria-current="page"> 
 <span class="menu-text">Unidad 2</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./SegundoDavid_U3_T1"> 
+    <a class="nav-link" href="./SegundoDavid_U3_T1.html"> 
 <span class="menu-text">Unidad 3</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./SegundoDavid_U4_T1"> 
+    <a class="nav-link" href="./SegundoDavid_U4_T1.html"> 
 <span class="menu-text">Unidad 4</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./SegundoDavid_U5_T1"> 
+    <a class="nav-link" href="./SegundoDavid_U5_T1.html"> 
 <span class="menu-text">Unidad 5</span></a>
   </li>  
 </ul>
@@ -1168,7 +1168,7 @@ A pesar de la reducción en la cantidad de operaciones, los algoritmos para mane
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/DavidSG24\.github\.io\/An-lisis-de-algoritmos\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
