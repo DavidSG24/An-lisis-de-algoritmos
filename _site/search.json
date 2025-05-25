@@ -184,49 +184,49 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "\nReportes de Algoritmos\n",
+    "title": "Análisis de algoritmos 2025-1",
     "section": "",
-    "text": "Explora comparaciones, simulaciones y visualizaciones detalladas sobre algoritmos de ordenamiento, búsqueda, estructuras de datos e intersección de conjuntos."
+    "text": "Este sitio web académico reúne una colección de reportes experimentales desarrollados como parte del curso Análisis de algoritmos 2025-1. Cada unidad contiene análisis comparativos de distintos enfoques algorítmicos, aplicados a problemas clásicos de la computación como ordenamiento, búsqueda, operaciones matriciales e intersección de conjuntos.\nLos reportes incluyen:\n\nImplementaciones desde cero en Python\nSimulaciones controladas con conjuntos de datos\nVisualizaciones con gráficas, tablas y mapas de calor\nEvaluación teórica y empírica del desempeño algorítmico\n\nEl objetivo es ofrecer una visión práctica, crítica y completa del comportamiento de los algoritmos bajo distintos escenarios, para fortalecer el criterio técnico en la elección de estructuras y estrategias de programación."
   },
   {
     "objectID": "index.html#acerca-del-sitio",
     "href": "index.html#acerca-del-sitio",
-    "title": "\nReportes de Algoritmos\n",
-    "section": "Acerca del sitio",
-    "text": "Acerca del sitio\nEste sitio web académico reúne una colección de reportes experimentales desarrollados como parte del curso Análisis de algoritmos 2025-1. Cada unidad contiene análisis comparativos de distintos enfoques algorítmicos, aplicados a problemas clásicos de la computación como ordenamiento, búsqueda, operaciones matriciales e intersección de conjuntos.\nLos reportes incluyen: - Implementaciones desde cero en Python - Simulaciones controladas con conjuntos de datos - Visualizaciones con gráficas, tablas y mapas de calor - Evaluación teórica y empírica del desempeño algorítmico\nEl objetivo es ofrecer una visión práctica, crítica y completa del comportamiento de los algoritmos bajo distintos escenarios, para fortalecer el criterio técnico en la elección de estructuras y estrategias de programación."
+    "title": "Análisis de algoritmos 2025-1",
+    "section": "",
+    "text": "Este sitio web académico reúne una colección de reportes experimentales desarrollados como parte del curso Análisis de algoritmos 2025-1. Cada unidad contiene análisis comparativos de distintos enfoques algorítmicos, aplicados a problemas clásicos de la computación como ordenamiento, búsqueda, operaciones matriciales e intersección de conjuntos.\nLos reportes incluyen:\n\nImplementaciones desde cero en Python\nSimulaciones controladas con conjuntos de datos\nVisualizaciones con gráficas, tablas y mapas de calor\nEvaluación teórica y empírica del desempeño algorítmico\n\nEl objetivo es ofrecer una visión práctica, crítica y completa del comportamiento de los algoritmos bajo distintos escenarios, para fortalecer el criterio técnico en la elección de estructuras y estrategias de programación."
   },
   {
     "objectID": "index.html#unidad-1-análisis-de-crecimiento-algorítmico",
     "href": "index.html#unidad-1-análisis-de-crecimiento-algorítmico",
-    "title": "\nReportes de Algoritmos\n",
+    "title": "Análisis de algoritmos 2025-1",
     "section": "Unidad 1: Análisis de Crecimiento Algorítmico",
     "text": "Unidad 1: Análisis de Crecimiento Algorítmico\nEste reporte explora y compara visualmente distintos órdenes de crecimiento (como O(1), O(log n), O(n log n), O(n²), O(n!), etc.) mediante simulaciones en Python. Se generan gráficas y tablas para ilustrar cómo cada función crece con el tamaño de la entrada, analizando también el impacto en tiempos de ejecución y costos computacionales.\nIr al reporte de la Unidad 1"
   },
   {
     "objectID": "index.html#unidad-2-estructuras-de-datos-y-álgebra-lineal",
     "href": "index.html#unidad-2-estructuras-de-datos-y-álgebra-lineal",
-    "title": "\nReportes de Algoritmos\n",
+    "title": "Análisis de algoritmos 2025-1",
     "section": "Unidad 2: Estructuras de Datos y Álgebra Lineal",
     "text": "Unidad 2: Estructuras de Datos y Álgebra Lineal\nEn este estudio se comparan dos métodos clásicos del álgebra lineal computacional: la multiplicación de matrices y la eliminación gaussiana (y su variante Gauss-Jordan). Se evalúan en términos de operaciones realizadas y tiempo de ejecución en matrices aleatorias de diferentes tamaños, identificando en qué contextos es más eficiente cada enfoque.\n🔗 Ir al reporte de la Unidad 2"
   },
   {
     "objectID": "index.html#unidad-3-algoritmos-de-ordenamiento",
     "href": "index.html#unidad-3-algoritmos-de-ordenamiento",
-    "title": "\nReportes de Algoritmos\n",
+    "title": "Análisis de algoritmos 2025-1",
     "section": "Unidad 3: Algoritmos de Ordenamiento",
     "text": "Unidad 3: Algoritmos de Ordenamiento\nEste reporte presenta la implementación y evaluación de cinco métodos de ordenamiento: Heapsort, Mergesort, Quicksort, Bubblesort y ordenamiento con SkipList. Se analiza el rendimiento de cada algoritmo con diferentes niveles de desorden en los datos, considerando tanto el número de comparaciones como el tiempo requerido.\n🔗 Ir al reporte de la Unidad 3"
   },
   {
     "objectID": "index.html#unidad-4-algoritmos-de-búsqueda-por-comparación",
     "href": "index.html#unidad-4-algoritmos-de-búsqueda-por-comparación",
-    "title": "\nReportes de Algoritmos\n",
+    "title": "Análisis de algoritmos 2025-1",
     "section": "Unidad 4: Algoritmos de Búsqueda por Comparación",
     "text": "Unidad 4: Algoritmos de Búsqueda por Comparación\nSe estudian distintas estrategias de búsqueda: secuencial, binaria acotada, búsquedas no acotadas (B1, B2) y mediante SkipList. El análisis incluye datos perturbados y ordenados, evaluando el desempeño con métricas como tiempo y número de comparaciones. Se discute la aplicabilidad de cada técnica según el tipo de datos.\n🔗 Ir al reporte de la Unidad 4"
   },
   {
     "objectID": "index.html#unidad-5-intersección-y-unión-de-conjuntos-ordenados",
     "href": "index.html#unidad-5-intersección-y-unión-de-conjuntos-ordenados",
-    "title": "\nReportes de Algoritmos\n",
+    "title": "Análisis de algoritmos 2025-1",
     "section": "Unidad 5: Intersección y Unión de Conjuntos Ordenados",
     "text": "Unidad 5: Intersección y Unión de Conjuntos Ordenados\nEste documento compara algoritmos para calcular intersecciones de conjuntos ordenados: Melding, Baeza-Yates (con bisección, B1, B2) y Barbay-Kenyon. Se aplican sobre pares, tripletas y tetrapletas de listas para evaluar tiempo, comparaciones y tamaño de la intersección, utilizando gráficos boxplot para representar resultados.\n🔗 Ir al reporte de la Unidad 5"
   },
