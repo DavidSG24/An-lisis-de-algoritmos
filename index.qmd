@@ -1,23 +1,18 @@
 ---
-title: ""
+title: "Análisis de algoritmos 2025-1"
 format:
   html:
     toc: true
     page-layout: full
 ---
 
-<div class="hero-text">
-  <h1><span class="highlight">Reportes de Algoritmos</span></h1>
-  <p>Explora comparaciones, simulaciones y visualizaciones detalladas sobre algoritmos de ordenamiento, búsqueda, estructuras de datos e intersección de conjuntos.</p>
-</div>
-
----
 
 ## Acerca del sitio
 
 Este sitio web académico reúne una colección de reportes experimentales desarrollados como parte del curso *Análisis de algoritmos 2025-1*. Cada unidad contiene análisis comparativos de distintos enfoques algorítmicos, aplicados a problemas clásicos de la computación como ordenamiento, búsqueda, operaciones matriciales e intersección de conjuntos.
 
 Los reportes incluyen:
+
 - Implementaciones desde cero en Python
 - Simulaciones controladas con conjuntos de datos
 - Visualizaciones con gráficas, tablas y mapas de calor

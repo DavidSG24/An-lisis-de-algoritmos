@@ -186,7 +186,7 @@
     "href": "index.html",
     "title": "\nReportes de Algoritmos\n",
     "section": "",
-    "text": "format: html: toc: true page-layout: full —"
+    "text": "Explora comparaciones, simulaciones y visualizaciones detalladas sobre algoritmos de ordenamiento, búsqueda, estructuras de datos e intersección de conjuntos."
   },
   {
     "objectID": "index.html#acerca-del-sitio",
@@ -200,7 +200,7 @@
     "href": "index.html#unidad-1-análisis-de-crecimiento-algorítmico",
     "title": "\nReportes de Algoritmos\n",
     "section": "Unidad 1: Análisis de Crecimiento Algorítmico",
-    "text": "Unidad 1: Análisis de Crecimiento Algorítmico\nEste reporte explora y compara visualmente distintos órdenes de crecimiento (como O(1), O(log n), O(n log n), O(n²), O(n!), etc.) mediante simulaciones en Python. Se generan gráficas y tablas para ilustrar cómo cada función crece con el tamaño de la entrada, analizando también el impacto en tiempos de ejecución y costos computacionales.\n🔗 Ir al reporte de la Unidad 1"
+    "text": "Unidad 1: Análisis de Crecimiento Algorítmico\nEste reporte explora y compara visualmente distintos órdenes de crecimiento (como O(1), O(log n), O(n log n), O(n²), O(n!), etc.) mediante simulaciones en Python. Se generan gráficas y tablas para ilustrar cómo cada función crece con el tamaño de la entrada, analizando también el impacto en tiempos de ejecución y costos computacionales.\nIr al reporte de la Unidad 1"
   },
   {
     "objectID": "index.html#unidad-2-estructuras-de-datos-y-álgebra-lineal",
