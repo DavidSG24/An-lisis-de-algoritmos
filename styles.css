@@ -60,7 +60,7 @@ a:hover {
 }
 
 /* ============================== */
-/* Código en línea */
+/* Código en línea y bloques */
 code {
   background-color: #eaeaea;
   color: #d63384;
@@ -70,28 +70,25 @@ code {
   font-family: 'Fira Code', Consolas, monospace;
 }
 
-/* ============================== */
-/* Bloques de código */
 pre, pre code {
-  background-color: #1e1e28 !important;
-  color: #f1f1f1 !important;
+  background-color: #f5f5f5 !important;
+  color: #2c2f36 !important;
   border-radius: 10px;
   padding: 1.2rem;
   font-family: 'Fira Code', Consolas, monospace;
   font-size: 0.9rem;
   line-height: 1.6;
   overflow-x: auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
 }
+
 
 /* ============================== */
 /* Botón copiar código */
-div.sourceCode {
-  position: relative;
-}
 div.sourceCode button.copy-to-clipboard-button {
-  background-color: #444;
-  color: white;
+  background-color: #e0e0e0;
+  color: #333;
   border: none;
   border-radius: 4px;
   padding: 0.3rem 0.6rem;
@@ -99,7 +96,7 @@ div.sourceCode button.copy-to-clipboard-button {
   top: 0.5rem;
   right: 0.5rem;
   font-size: 0.8rem;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: all 0.3s;
 }
 div.sourceCode button.copy-to-clipboard-button:hover {
@@ -107,6 +104,7 @@ div.sourceCode button.copy-to-clipboard-button:hover {
   background-color: #00c8ff;
   color: #000;
 }
+
 
 /* ============================== */
 /* Tablas */
