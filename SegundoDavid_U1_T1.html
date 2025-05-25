@@ -364,11 +364,20 @@ window.Quarto = {
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><strong>Introducción</strong></a></li>
-  <li><a href="#instrucciones" id="toc-instrucciones" class="nav-link" data-scroll-target="#instrucciones"><strong>Instrucciones</strong></a></li>
-  <li><a href="#análisis" id="toc-análisis" class="nav-link" data-scroll-target="#análisis"><strong>Análisis</strong></a>
+  <li><a href="#solución" id="toc-solución" class="nav-link" data-scroll-target="#solución"><strong>Solución</strong></a>
   <ul class="collapse">
-  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión"><strong>Conclusión</strong></a></li>
+  <li><a href="#definimos-las-funciones-que-usaremos" id="toc-definimos-las-funciones-que-usaremos" class="nav-link" data-scroll-target="#definimos-las-funciones-que-usaremos"><strong>Definimos las funciones que usaremos</strong>:</a></li>
   </ul></li>
+  <li><a href="#comparativa-de-la-implementaciòn-de-las-funciones" id="toc-comparativa-de-la-implementaciòn-de-las-funciones" class="nav-link" data-scroll-target="#comparativa-de-la-implementaciòn-de-las-funciones"><strong>Comparativa de la implementaciòn de las funciones</strong></a>
+  <ul class="collapse">
+  <li><a href="#observaciones" id="toc-observaciones" class="nav-link" data-scroll-target="#observaciones"><strong>Observaciones</strong></a></li>
+  <li><a href="#observaciones-1" id="toc-observaciones-1" class="nav-link" data-scroll-target="#observaciones-1"><strong>Observaciones</strong></a></li>
+  <li><a href="#observaciones-2" id="toc-observaciones-2" class="nav-link" data-scroll-target="#observaciones-2"><strong>Observaciones</strong></a></li>
+  <li><a href="#observaciones-3" id="toc-observaciones-3" class="nav-link" data-scroll-target="#observaciones-3"><strong>Observaciones</strong></a></li>
+  <li><a href="#observaciones-4" id="toc-observaciones-4" class="nav-link" data-scroll-target="#observaciones-4"><strong>Observaciones</strong></a></li>
+  </ul></li>
+  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones"><strong>Conclusiones</strong></a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><strong>Referencias</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -385,35 +394,17 @@ window.Quarto = {
 <h2 class="anchored">
 <b>Reporte Escrito: Experimentos y análisis</b>
 </h2>
-<section id="introducción" class="level3">
-<h3 class="anchored" data-anchor-id="introducción"><strong>Introducción</strong></h3>
-<p>Prueba de commit El estudio de la eficiencia algorítmica es crucial en la informática, ya que permite evaluar el comportamiento de los algoritmos ante diferentes volúmenes de datos. Este análisis no solo ayuda a seleccionar la mejor opción para un problema determinado, sino que también proporciona información sobre la escalabilidad de las soluciones computacionales. Un algoritmo eficiente puede significar la diferencia entre una ejecución en segundos o en horas, dependiendo del crecimiento del tamaño de la entrada (Aho, Hopcroft, &amp; Ullman, 1974).</p>
+<section id="introducción" class="level1">
+<h1><strong>Introducción</strong></h1>
+<p>El estudio de la eficiencia algorítmica es crucial en la informática, ya que permite evaluar el comportamiento de los algoritmos ante diferentes volúmenes de datos. Este análisis no solo ayuda a seleccionar la mejor opción para un problema determinado, sino que también proporciona información sobre la escalabilidad de las soluciones computacionales. Un algoritmo eficiente puede significar la diferencia entre una ejecución en segundos o en horas, dependiendo del crecimiento del tamaño de la entrada.</p>
 <p>Las notaciones asintóticas, como <span class="math inline">\(O(n)\)</span>, <span class="math inline">\(Θ(n)\)</span> y <span class="math inline">\(Ω(n)\)</span>, permiten describir el comportamiento del tiempo de ejecución de un algoritmo en el peor, promedio y mejor caso, respectivamente. Estas notaciones ayudan a comparar algoritmos sin necesidad de realizar pruebas empíricas extensivas, ya que proporcionan una medida teórica del rendimiento. Al utilizar estas herramientas, los desarrolladores pueden tomar decisiones informadas sobre qué algoritmo implementar en función de las necesidades específicas del sistema (Kleinberg &amp; Tardos, 2005).</p>
 <p>En este trabajo, realizaremos un análisis comparativo de algoritmos clásicos de búsqueda y ordenamiento, aplicando mediciones experimentales y teóricas para evaluar su eficiencia. Se examinará el impacto del tamaño de la entrada en el tiempo de ejecución y el consumo de memoria, identificando cuáles estrategias son más adecuadas para diferentes contextos computacionales. Esto permitirá obtener una visión clara de las ventajas y limitaciones de cada enfoque en términos de rendimiento y escalabilidad.</p>
 <hr>
 </section>
-<section id="instrucciones" class="level3">
-<h3 class="anchored" data-anchor-id="instrucciones"><strong>Instrucciones</strong></h3>
-<ol type="1">
-<li><p><strong>Compara</strong> mediante simulación en un notebook de Jupyter o Quarto los siguientes órdenes de crecimiento:</p>
-<ul>
-<li><span class="math inline">\(O(1)\)</span> vs <span class="math inline">\(O(\log n)\)</span></li>
-<li><span class="math inline">\(O(n)\)</span> vs <span class="math inline">\(O(n \log n)\)</span></li>
-<li><span class="math inline">\(O(n^2)\)</span> vs <span class="math inline">\(O(n^3)\)</span></li>
-<li><span class="math inline">\(O(a^n)\)</span> vs <span class="math inline">\(O(n!)\)</span></li>
-<li><span class="math inline">\(O(n!)\)</span> vs <span class="math inline">\(O(n^n)\)</span></li>
-</ul></li>
-<li><p>Escoge los rangos adecuados para cada comparación, ya que, como será evidente después, no es práctico fijar los rangos.</p></li>
-<li><p>Crea una figura por comparación, i.e., teniendo como resultado cinco figuras.</p></li>
-<li><p>Discute lo observado por figura.</p></li>
-<li><p><strong>Crea</strong> una tabla donde muestre tiempos de ejecución simulados para algoritmos ficticios que tengan los órdenes de crecimiento anteriores, suponiendo que cada operación tiene un costo de 1 nanosegundo.</p>
-<ul>
-<li>Usa diferentes tamaños de entrada <span class="math inline">\(n = 100\)</span>, <span class="math inline">\(n = 1000\)</span>, <span class="math inline">\(n = 10000\)</span> y <span class="math inline">\(n = 100000\)</span>.</li>
-<li>Nota que para algunas fórmulas, los números pueden ser muy grandes (usa el foro de dudas si llegas a tener problemas).</li>
-</ul></li>
-<li><p><strong>Discute</strong> las implicaciones de costos de cómputo necesarios para manipular grandes volúmenes de información, en el mismo notebook.</p></li>
-</ol>
-<p>Definimos las funciones que usaremos:</p>
+<section id="solución" class="level1">
+<h1><strong>Solución</strong></h1>
+<section id="definimos-las-funciones-que-usaremos" class="level2">
+<h2 class="anchored" data-anchor-id="definimos-las-funciones-que-usaremos"><strong>Definimos las funciones que usaremos</strong>:</h2>
 <div id="cell-4" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">Este notebook analiza, compara y grafica órdenes de crecimiento algorítmico,</span></span>
@@ -535,10 +526,14 @@ window.Quarto = {
 <span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
 <span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n <span class="op">**</span> n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+</section>
+<section id="comparativa-de-la-implementaciòn-de-las-funciones" class="level1">
+<h1><strong>Comparativa de la implementaciòn de las funciones</strong></h1>
 <p>1.- <span class="math inline">\(O(1)\)</span> vs <span class="math inline">\(O(\log n)\)</span></p>
 <p>Para esta comparación, elegimos un rango de valores relativamente pequeño. La razón es que la función <span class="math inline">\(O(1)\)</span> tiene un crecimiento constante sin importar el tamaño de la entrada, mientras que <span class="math inline">\(O(\log n)\)</span> crece de manera muy lenta a medida que <span class="math inline">\(n\)</span> aumenta. Dado que el crecimiento logarítmico es mucho menor que el lineal, podemos visualizar ambas funciones en un mismo gráfico sin la necesidad de un rango de valores extremadamente grande.</p>
 <p>Esta comparación nos permite observar cómo, incluso para valores grandes de <span class="math inline">\(n\)</span>, la diferencia entre <span class="math inline">\(O(1)\)</span> y <span class="math inline">\(O(\log n)\)</span> sigue siendo significativa.</p>
-<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:472}}" data-outputid="8b9fd9f1-1faf-480e-fffa-db539c6472b1">
+<div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:472}}" data-outputid="8b9fd9f1-1faf-480e-fffa-db539c6472b1">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">100</span>)  <span class="co"># Rango de 1 a 99</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -565,18 +560,14 @@ window.Quarto = {
 </div>
 </div>
 <p>En esta gráfica, se puede observar claramente la diferencia en el tiempo de ejecución entre dos funciones con distintas complejidades algorítmicas. A medida que el tamaño de la entrada <span class="math inline">\(n\)</span> aumenta, ambas funciones muestran comportamientos diferentes, lo que tiene un impacto significativo en su rendimiento computacional.</p>
-<ul>
-<li><p>La función <span class="math inline">\(O(1)\)</span> se representa como una línea horizontal, lo que indica que su tiempo de ejecución permanece constante sin importar el tamaño de la entrada. Es decir, si la entrada tiene un tamaño de 10, 1000 o 10,000 elementos, el tiempo de ejecución seguirá siendo el mismo. Esto la convierte en la opción más eficiente en términos de rapidez y estabilidad, ya que su costo computacional no varía con el tamaño de los datos.</p></li>
-<li><p>En contraste, la función <span class="math inline">\(O(\log n)\)</span> experimenta un crecimiento logarítmico a medida que la entrada se incrementa. Esto significa que, si duplicamos el tamaño de la entrada, el tiempo de ejecución no se duplica, sino que crece de manera más lenta y progresiva. En la gráfica, se observa una curva ascendente suave que aumenta gradualmente sin alcanzar niveles drásticos. Aunque esta función no es tan rápida como <span class="math inline">\(O(1)\)</span>, sigue siendo altamente eficiente, especialmente cuando se manejan volúmenes de datos grandes.</p></li>
-</ul>
-</section>
-<section id="análisis" class="level2">
-<h2 class="anchored" data-anchor-id="análisis"><strong>Análisis</strong></h2>
+<p>La función <span class="math inline">\(O(1)\)</span> se representa como una línea horizontal, lo que indica que su tiempo de ejecución permanece constante sin importar el tamaño de la entrada. Es decir, si la entrada tiene un tamaño de 10, 1000 o 10,000 elementos, el tiempo de ejecución seguirá siendo el mismo. Esto la convierte en la opción más eficiente en términos de rapidez y estabilidad, ya que su costo computacional no varía con el tamaño de los datos.</p>
+<p>En contraste, la función <span class="math inline">\(O(\log n)\)</span> experimenta un crecimiento logarítmico a medida que la entrada se incrementa. Esto significa que, si duplicamos el tamaño de la entrada, el tiempo de ejecución no se duplica, sino que crece de manera más lenta y progresiva. En la gráfica, se observa una curva ascendente suave que aumenta gradualmente sin alcanzar niveles drásticos. Aunque esta función no es tan rápida como <span class="math inline">\(O(1)\)</span>, sigue siendo altamente eficiente, especialmente cuando se manejan volúmenes de datos grandes.</p>
+<section id="observaciones" class="level2">
+<h2 class="anchored" data-anchor-id="observaciones"><strong>Observaciones</strong></h2>
 <p>La diferencia clave entre ambas funciones radica en la forma en que escalan con el tamaño de la entrada, ya que mientras <span class="math inline">\(O(1)\)</span> mantiene un tiempo de ejecución constante, <span class="math inline">\(O(\log n)\)</span> presenta un crecimiento ligero pero progresivo. En términos prácticos, para valores pequeños de <span class="math inline">\(n\)</span>, la diferencia entre ambas funciones es casi imperceptible; sin embargo, a medida que <span class="math inline">\(n\)</span> aumenta considerablemente, <span class="math inline">\(O(1)\)</span> destaca por su rapidez y eficiencia, mientras que <span class="math inline">\(O(\log n)\)</span> sigue siendo competitivo, aunque con un incremento gradual en el tiempo de ejecución. La elección entre estas funciones depende del contexto y del tamaño de la entrada, pues si la prioridad es maximizar la eficiencia temporal, <span class="math inline">\(O(1)\)</span> es la mejor opción, pero si se busca un equilibrio entre escalabilidad y rendimiento en volúmenes de datos más grandes, <span class="math inline">\(O(\log n)\)</span> sigue siendo una alternativa viable y eficiente.</p>
-<hr>
 <p>2.- <em><span class="math inline">\(O(n)\)</span> vs <span class="math inline">\(O(n \log n)\)</span></em></p>
 <p>Para esta comparación, utilizamos un rango de valores más amplio, ya que tanto <span class="math inline">\(O(n)\)</span> como <span class="math inline">\(O(n \log n)\)</span> presentan diferencias más notables a medida que <span class="math inline">\(n\)</span> aumenta. Esto permite visualizar con mayor claridad cómo crecen ambas funciones y en qué punto comienza a ser significativa la diferencia en sus tiempos de ejecución.</p>
-<div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="f3d9da93-f817-41ce-d8aa-26835844e1bd">
+<div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="f3d9da93-f817-41ce-d8aa-26835844e1bd">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">1000</span>)  <span class="co"># Rango de 1 a 999</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -600,16 +591,15 @@ window.Quarto = {
 </div>
 </div>
 <p>En esta gráfica, podemos observar cómo el tiempo de ejecución de ambas funciones aumenta a medida que crece el tamaño de la entrada <span class="math inline">\(n\)</span>. Sin embargo, su comportamiento difiere significativamente debido a la diferencia en sus tasas de crecimiento.</p>
-<ul>
-<li><p>La función <span class="math inline">\(O(n)\)</span> muestra un crecimiento <strong>estrictamente lineal</strong>, lo que significa que el tiempo de ejecución crece de manera proporcional al tamaño de la entrada. Si <span class="math inline">\(n\)</span> se duplica, el tiempo de ejecución también se duplica. Esto indica que el número de operaciones realizadas es constante por cada unidad de entrada, lo que hace que esta función sea predecible y eficiente en términos de escalabilidad.</p></li>
-<li><p>En contraste, la función <span class="math inline">\(O(n \log n)\)</span> tiene un crecimiento <strong>ligeramente más acelerado</strong> debido al factor logarítmico. La gráfica muestra una curva que se eleva de forma progresiva conforme aumenta <span class="math inline">\(n\)</span>, lo que indica que, aunque al principio la diferencia entre ambas funciones es mínima, con valores grandes de <span class="math inline">\(n\)</span>, la brecha en tiempo de ejecución se hace cada vez más notoria. Este tipo de complejidad es frecuente en algoritmos que requieren dividir y combinar subproblemas, como los algoritmos de ordenamiento eficientes.</p></li>
-</ul>
-<p><strong>Análisis</strong></p>
+<p>La función <span class="math inline">\(O(n)\)</span> muestra un crecimiento <strong>estrictamente lineal</strong>, lo que significa que el tiempo de ejecución crece de manera proporcional al tamaño de la entrada. Si <span class="math inline">\(n\)</span> se duplica, el tiempo de ejecución también se duplica. Esto indica que el número de operaciones realizadas es constante por cada unidad de entrada, lo que hace que esta función sea predecible y eficiente en términos de escalabilidad.</p>
+<p>En contraste, la función <span class="math inline">\(O(n \log n)\)</span> tiene un crecimiento <strong>ligeramente más acelerado</strong> debido al factor logarítmico. La gráfica muestra una curva que se eleva de forma progresiva conforme aumenta <span class="math inline">\(n\)</span>, lo que indica que, aunque al principio la diferencia entre ambas funciones es mínima, con valores grandes de <span class="math inline">\(n\)</span>, la brecha en tiempo de ejecución se hace cada vez más notoria. Este tipo de complejidad es frecuente en algoritmos que requieren dividir y combinar subproblemas, como los algoritmos de ordenamiento eficientes.</p>
+</section>
+<section id="observaciones-1" class="level2">
+<h2 class="anchored" data-anchor-id="observaciones-1"><strong>Observaciones</strong></h2>
 <p>Aunque ambas funciones crecen con el tamaño de la entrada, <span class="math inline">\(O(n \log n)\)</span> lo hace a una velocidad mayor que <span class="math inline">\(O(n)\)</span>, por lo que, si bien en entradas pequeñas el tiempo de ejecución es similar, a medida que <span class="math inline">\(n\)</span> aumenta, <span class="math inline">\(O(n \log n)\)</span> demanda más recursos computacionales. En términos prácticos, <span class="math inline">\(O(n)\)</span> es preferible cuando se busca eficiencia y predictibilidad, mientras que <span class="math inline">\(O(n \log n)\)</span> es más adecuado en problemas que requieren estrategias de ordenamiento o dividir y conquistar, aunque con un costo computacional mayor.</p>
-<hr>
-<p>3.- <span class="math inline">\(O(n^2)\)</span> vs <span class="math inline">\(O(n^3)\)</span></p>
+<p><strong>3</strong>.- <span class="math inline">\(O(n^2)\)</span> vs <span class="math inline">\(O(n^3)\)</span></p>
 <p>En este caso, optamos por un rango de valores más reducido en comparación con los anteriores, debido a que ambas funciones presentan un crecimiento significativamente más acelerado. Dado que su tasa de incremento es rápida, no es necesario utilizar valores demasiado grandes de <span class="math inline">\(n\)</span> para visualizar claramente la diferencia en su comportamiento.</p>
-<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:476}}" data-outputid="76af1e85-66eb-442b-ccc7-135d186ecbc6">
+<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:476}}" data-outputid="76af1e85-66eb-442b-ccc7-135d186ecbc6">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">200</span>)  <span class="co"># Rango de 1 a 199</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -633,16 +623,15 @@ window.Quarto = {
 </div>
 </div>
 <p>En esta gráfica, se analiza la diferencia en el tiempo de ejecución de dos funciones con complejidades algorítmicas significativamente mayores a las vistas anteriormente. Debido a la rapidez con la que crecen ambas, se ha elegido un rango más pequeño de valores de <span class="math inline">\(n\)</span>, lo que permite visualizar con mayor claridad la diferencia entre ellas.</p>
-<ul>
-<li><p>La función <span class="math inline">\(O(n^2)\)</span> se representa en la gráfica como una curva de crecimiento cuadrático, lo que significa que su tiempo de ejecución aumenta proporcionalmente al cuadrado del tamaño de la entrada. En términos prácticos, si <span class="math inline">\(n\)</span> se duplica, el tiempo de ejecución se cuadruplica. Este tipo de complejidad es frecuente en algoritmos que requieren comparar pares de elementos o realizar múltiples iteraciones anidadas sobre la misma estructura de datos.</p></li>
-<li><p>La función <span class="math inline">\(O(n^3)\)</span> presenta un crecimiento aún más acelerado, lo que se refleja en la gráfica con una curva que se eleva más rápidamente en comparación con <span class="math inline">\(O(n^2)\)</span>. Su crecimiento cúbico implica que al duplicar el tamaño de la entrada, el tiempo de ejecución aumenta ocho veces, lo que representa un incremento exponencialmente mayor en comparación con el comportamiento cuadrático. Este tipo de complejidad es común en algoritmos que requieren iteraciones triples anidadas o cálculos en estructuras tridimensionales.</p></li>
-</ul>
-<p><strong>Análisis</strong></p>
+<p>La función <span class="math inline">\(O(n^2)\)</span> se representa en la gráfica como una curva de crecimiento cuadrático, lo que significa que su tiempo de ejecución aumenta proporcionalmente al cuadrado del tamaño de la entrada. En términos prácticos, si <span class="math inline">\(n\)</span> se duplica, el tiempo de ejecución se cuadruplica. Este tipo de complejidad es frecuente en algoritmos que requieren comparar pares de elementos o realizar múltiples iteraciones anidadas sobre la misma estructura de datos.</p>
+<p>La función <span class="math inline">\(O(n^3)\)</span> presenta un crecimiento aún más acelerado, lo que se refleja en la gráfica con una curva que se eleva más rápidamente en comparación con <span class="math inline">\(O(n^2)\)</span>. Su crecimiento cúbico implica que al duplicar el tamaño de la entrada, el tiempo de ejecución aumenta ocho veces, lo que representa un incremento exponencialmente mayor en comparación con el comportamiento cuadrático. Este tipo de complejidad es común en algoritmos que requieren iteraciones triples anidadas o cálculos en estructuras tridimensionales.</p>
+</section>
+<section id="observaciones-2" class="level2">
+<h2 class="anchored" data-anchor-id="observaciones-2"><strong>Observaciones</strong></h2>
 <p>Si bien ambas funciones exhiben un crecimiento acelerado, la diferencia en sus tasas de incremento se hace evidente conforme aumenta <span class="math inline">\(n\)</span>, pues mientras <span class="math inline">\(O(n^2)\)</span> mantiene un crecimiento controlado y moderado, la función <span class="math inline">\(O(n^3)\)</span> se vuelve prohibitiva rápidamente en términos de tiempo de ejecución, lo que la hace impráctica para valores grandes de <span class="math inline">\(n\)</span>. Aunque en entradas pequeñas la diferencia en rendimiento puede no ser crítica, a medida que el tamaño de los datos crece, el impacto del término cúbico se vuelve dominante, incrementando significativamente el costo computacional y volviendo esencial la selección de un algoritmo más eficiente en aplicaciones donde el rendimiento sea un factor determinante.</p>
-<hr>
 <p>4.- <span class="math inline">\(O(a^n)\)</span> vs <span class="math inline">\(O(n!)\)</span></p>
 <p>En este caso, es necesario utilizar un rango de valores considerablemente pequeño, ya que la función factorial <span class="math inline">\(O(n!)\)</span> crece a un ritmo extremadamente acelerado. Para garantizar una comparación clara y comprensible, se ha establecido un valor fijo de <span class="math inline">\(a\)</span>, asignándole el valor de <span class="math inline">\(5\)</span> con el objetivo de evitar que el crecimiento sea trivial y proporcionar un ejemplo representativo del comportamiento de ambas funciones.</p>
-<div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="67757ae5-c2d9-4acd-ad2e-4ca939ee2d27">
+<div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="67757ae5-c2d9-4acd-ad2e-4ca939ee2d27">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)  <span class="co"># Rango de 1 a 5 debido al crecimiento acelerado de O(n!)</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -666,15 +655,15 @@ window.Quarto = {
 </div>
 </div>
 <p>Podemos observar que ambas funciones exhiben un comportamiento de crecimiento exponencial, lo que provoca un aumento drástico en el tiempo de ejecución conforme incrementa el tamaño de la entrada <span class="math inline">\(n\)</span>. Sin embargo, presentan diferencias notables en la velocidad con la que este crecimiento ocurre.</p>
-<ul>
-<li><p>La función <span class="math inline">\(O(a^n)\)</span> describe un crecimiento exponencial que se acelera a medida que <span class="math inline">\(n\)</span> aumenta. La rapidez con la que se eleva la curva dependerá del valor de la constante <span class="math inline">\(a\)</span>, aunque en general, este tipo de complejidad es característica de algoritmos que exploran múltiples combinaciones posibles, como la búsqueda por fuerza bruta.</p></li>
-<li><p>La función <span class="math inline">\(O(n!)\)</span> presenta un crecimiento aún más abrupto que la exponencial, lo que se refleja en la gráfica con una curva que asciende casi verticalmente. Este comportamiento es típico de algoritmos que requieren evaluar todas las permutaciones posibles de un conjunto, lo que resulta en un aumento explosivo del tiempo de ejecución incluso para valores pequeños de <span class="math inline">\(n\)</span>.</p></li>
-</ul>
-<p><strong>Análisis</strong></p>
+<p>La función <span class="math inline">\(O(a^n)\)</span> describe un crecimiento exponencial que se acelera a medida que <span class="math inline">\(n\)</span> aumenta. La rapidez con la que se eleva la curva dependerá del valor de la constante <span class="math inline">\(a\)</span>, aunque en general, este tipo de complejidad es característica de algoritmos que exploran múltiples combinaciones posibles, como la búsqueda por fuerza bruta.</p>
+<p>La función <span class="math inline">\(O(n!)\)</span> presenta un crecimiento aún más abrupto que la exponencial, lo que se refleja en la gráfica con una curva que asciende casi verticalmente. Este comportamiento es típico de algoritmos que requieren evaluar todas las permutaciones posibles de un conjunto, lo que resulta en un aumento explosivo del tiempo de ejecución incluso para valores pequeños de <span class="math inline">\(n\)</span>.</p>
+</section>
+<section id="observaciones-3" class="level2">
+<h2 class="anchored" data-anchor-id="observaciones-3"><strong>Observaciones</strong></h2>
 <p>Aunque ambas funciones experimentan un crecimiento extremadamente rápido, la función <span class="math inline">\(O(n!)\)</span> incrementa su tiempo de ejecución a un ritmo considerablemente superior al de <span class="math inline">\(O(a^n)\)</span>, lo que la hace ineficiente incluso para valores moderados de <span class="math inline">\(n\)</span>. En términos prácticos, es preferible evitar algoritmos con complejidad factorial siempre que sea posible, ya que su costo computacional se vuelve prohibitivo en muy poco tiempo, mientras que <span class="math inline">\(O(a^n)\)</span> podría ser aceptable en ciertos escenarios donde <span class="math inline">\(n\)</span> no sea excesivamente grande; no obstante, en situaciones donde se requiera manejar entradas de gran tamaño, es recomendable buscar soluciones con una complejidad menor.</p>
 <p>5.- <span class="math inline">\(O(n!)\)</span> vs <span class="math inline">\(O(n^n)\)</span></p>
 <p>Al igual que en el caso anterior, es necesario utilizar un rango de valores reducido, ya que estas funciones presentan las tasas de crecimiento más elevadas analizadas hasta el momento. En particular, <span class="math inline">\(O(n^n)\)</span> exhibe un incremento aún más acelerado que <span class="math inline">\(O(n!)\)</span>, lo que hace que su tiempo de ejecución se dispare rápidamente conforme aumenta <span class="math inline">\(n\)</span>.</p>
-<div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="7c4f446e-2380-4b8e-c94a-77f7ed987043">
+<div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:475}}" data-outputid="7c4f446e-2380-4b8e-c94a-77f7ed987043">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos el rango de valores</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)  <span class="co"># Rango de 1 a 5 debido al crecimiento extremadamente rápido de O(n^n)</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -698,18 +687,18 @@ window.Quarto = {
 </div>
 </div>
 <p>La gráfica ilustra la diferencia en los órdenes de crecimiento entre <span class="math inline">\(O(n!)\)</span> (factorial de <span class="math inline">\(n\)</span>) y <span class="math inline">\(O(n^n)\)</span> (n elevado a la <span class="math inline">\(n\)</span>). Aunque ambas funciones exhiben un crecimiento acelerado, la función <span class="math inline">\(O(n^n)\)</span> escala a un ritmo exponencialmente mayor que <span class="math inline">\(O(n!)\)</span>, lo que implica una demanda computacional significativamente más elevada.</p>
-<ul>
-<li><p>La función <span class="math inline">\(O(n!)\)</span> presenta un crecimiento factorial, lo que significa que el tiempo de ejecución aumenta de manera extremadamente rápida conforme crece el tamaño de la entrada. Aunque sigue siendo altamente costosa, en esta comparación es la opción con menor complejidad relativa.</p></li>
-<li><p>La función <span class="math inline">\(O(n^n)\)</span> se distingue por una tasa de crecimiento aún más pronunciada, lo que se traduce en una curva que se eleva más rápidamente en la gráfica. Este tipo de complejidad es característica de problemas en los que se exploran combinaciones masivas, como el análisis de espacios de búsqueda en optimización y enumeración exhaustiva.</p></li>
-</ul>
-<p><strong>Análisis</strong></p>
+<p>La función <span class="math inline">\(O(n!)\)</span> presenta un crecimiento factorial, lo que significa que el tiempo de ejecución aumenta de manera extremadamente rápida conforme crece el tamaño de la entrada. Aunque sigue siendo altamente costosa, en esta comparación es la opción con menor complejidad relativa.</p>
+<p>La función <span class="math inline">\(O(n^n)\)</span> se distingue por una tasa de crecimiento aún más pronunciada, lo que se traduce en una curva que se eleva más rápidamente en la gráfica. Este tipo de complejidad es característica de problemas en los que se exploran combinaciones masivas, como el análisis de espacios de búsqueda en optimización y enumeración exhaustiva.</p>
+</section>
+<section id="observaciones-4" class="level2">
+<h2 class="anchored" data-anchor-id="observaciones-4"><strong>Observaciones</strong></h2>
 <p>Dado el rápido crecimiento de ambas funciones, su implementación en escenarios prácticos es inviable en la mayoría de los casos, ya que los tiempos de ejecución se vuelven excesivamente elevados incluso para valores moderados de <span class="math inline">\(n\)</span>. Aunque <span class="math inline">\(O(n^n)\)</span> crece a una velocidad superior a <span class="math inline">\(O(n!)\)</span>, en la práctica, ambas funciones resultan ineficientes y poco escalables, por lo que es preferible buscar soluciones con complejidades computacionales más manejables.</p>
 <p><strong>Crea</strong> una tabla donde muestre tiempos de ejecución simulados para algoritmos ficticios que tengan los órdenes de crecimiento anteriores, suponiendo que cada operación tiene un costo de 1 nanosegundo.</p>
 <ul>
 <li>Usa diferentes tamaños de entrada ( n = 100 ); ( n = 1000 ); ( n = 10000 ) y ( n = 100000 ).</li>
 <li>Nota que para algunas fórmulas, los números pueden ser muy grandes (usa el foro de dudas si llegas a tener problemas).</li>
 </ul>
-<div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:175}}" data-outputid="2d1705bb-04a7-450a-f837-353e9a3c1a07">
+<div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:175}}" data-outputid="2d1705bb-04a7-450a-f837-353e9a3c1a07">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definimos los valores de entrada a evaluar</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>n_values <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">100</span>, <span class="dv">1000</span>]</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1103,22 +1092,22 @@ window.Quarto = {
 <li><p><strong><span class="math inline">\(O(n^n)\)</span> (Crecimiento superexponencial):</strong> Representa la mayor tasa de crecimiento analizada, volviéndose inabordable incluso para entradas pequeñas. Se observa en problemas extremadamente complejos donde no se conoce una solución algorítmica eficiente.</p></li>
 </ul>
 <p>Dado el alto impacto que la complejidad algorítmica tiene en el rendimiento computacional, la selección de un algoritmo adecuado es esencial cuando se manejan grandes volúmenes de información. Algoritmos de complejidad constante, logarítmica o lineal son ideales para escenarios escalables, mientras que aquellos con crecimiento cuadrático o superior deben evitarse en la medida de lo posible. En problemas donde la optimización es clave, explorar enfoques alternativos o heurísticos puede marcar la diferencia en términos de eficiencia y viabilidad.</p>
-<section id="conclusión" class="level3">
-<h3 class="anchored" data-anchor-id="conclusión"><strong>Conclusión</strong></h3>
-<p>El estudio de la complejidad algorítmica es un pilar fundamental en la teoría de la computación y el análisis de algoritmos, permitiendo predecir el comportamiento de un programa en función del crecimiento de la entrada <span class="math inline">\(n\)</span> (Cormen et al., 2022). Desde funciones de tiempo constante <span class="math inline">\(O(1)\)</span> hasta complejidades factoriales y superexponenciales como <span class="math inline">\(O(n!)\)</span> y <span class="math inline">\(O(n^n)\)</span>, cada tipo de crecimiento establece las limitaciones y viabilidad de un algoritmo en distintos escenarios. Mientras algunas funciones escalan de manera eficiente y mantienen un crecimiento controlado, otras pueden volverse impracticables incluso con valores moderados de <span class="math inline">\(n\)</span> debido a su elevada demanda de recursos computacionales (Sedgewick &amp; Wayne, 2011).</p>
-<p>Los resultados obtenidos confirman que algoritmos con complejidades <span class="math inline">\(O(1)\)</span>, <span class="math inline">\(O(\log n)\)</span>, <span class="math inline">\(O(n)\)</span> y <span class="math inline">\(O(n \log n)\)</span> son altamente eficientes y adecuados para el procesamiento de grandes volúmenes de datos, dado que su tiempo de ejecución crece de manera razonable. En contraste, las complejidades cuadráticas <span class="math inline">\(O(n^2)\)</span> y cúbicas <span class="math inline">\(O(n^3)\)</span> pueden representar un problema cuando <span class="math inline">\(n\)</span> crece considerablemente, mientras que las funciones exponenciales y factoriales son extremadamente costosas en términos de tiempo de ejecución. En particular, las funciones <span class="math inline">\(O(n!)\)</span> y <span class="math inline">\(O(n^n)\)</span> son <strong>las más demandantes en términos computacionales</strong>, ya que su crecimiento es explosivo y el número de operaciones necesarias se vuelve inabordable incluso para valores pequeños de <span class="math inline">\(n\)</span>. Este tipo de complejidad es característico de problemas combinatorios y optimización, donde la exploración de todas las posibles soluciones genera costos computacionales prohibitivos (Goodrich &amp; Tamassia, 2014).</p>
-<p>Desde una perspectiva práctica, la selección de un algoritmo debe priorizar su escalabilidad y eficiencia, especialmente en aplicaciones donde el procesamiento de datos a gran escala es un requisito clave. Minimizar la complejidad computacional es esencial para evitar tiempos de ejecución innecesariamente largos y garantizar la viabilidad de un sistema. En muchos casos, optimizar algoritmos existentes o recurrir a estrategias heurísticas puede ser la mejor alternativa para abordar problemas difíciles sin incurrir en tiempos de ejecución prohibitivos. La eficiencia algorítmica no solo afecta el rendimiento, sino que también determina si un problema computacional es resoluble en un tiempo razonable con los recursos disponibles (Kleinberg &amp; Tardos, 2006).</p>
-<p><strong>Referencias</strong></p>
+</section>
+</section>
+<section id="conclusiones" class="level1">
+<h1><strong>Conclusiones</strong></h1>
+<p>El estudio de la complejidad algorítmica es un pilar fundamental en la teoría de la computación y el análisis de algoritmos, permitiendo predecir el comportamiento de un programa en función del crecimiento de la entrada <span class="math inline">\(n\)</span> (Cormen et al., 2022). Desde funciones de tiempo constante <span class="math inline">\(O(1)\)</span> hasta complejidades factoriales y superexponenciales como <span class="math inline">\(O(n!)\)</span> y <span class="math inline">\(O(n^n)\)</span>, cada tipo de crecimiento establece las limitaciones y viabilidad de un algoritmo en distintos escenarios. Mientras algunas funciones escalan de manera eficiente y mantienen un crecimiento controlado, otras pueden volverse impracticables incluso con valores moderados de <span class="math inline">\(n\)</span> debido a su elevada demanda de recursos computacionales.</p>
+<p>Los resultados obtenidos confirman que algoritmos con complejidades <span class="math inline">\(O(1)\)</span>, <span class="math inline">\(O(\log n)\)</span>, <span class="math inline">\(O(n)\)</span> y <span class="math inline">\(O(n \log n)\)</span> son altamente eficientes y adecuados para el procesamiento de grandes volúmenes de datos, dado que su tiempo de ejecución crece de manera razonable. En contraste, las complejidades cuadráticas <span class="math inline">\(O(n^2)\)</span> y cúbicas <span class="math inline">\(O(n^3)\)</span> pueden representar un problema cuando <span class="math inline">\(n\)</span> crece considerablemente, mientras que las funciones exponenciales y factoriales son extremadamente costosas en términos de tiempo de ejecución. En particular, las funciones <span class="math inline">\(O(n!)\)</span> y <span class="math inline">\(O(n^n)\)</span> son <strong>las más demandantes en términos computacionales</strong>, ya que su crecimiento es explosivo y el número de operaciones necesarias se vuelve inabordable incluso para valores pequeños de <span class="math inline">\(n\)</span>. Este tipo de complejidad es característico de problemas combinatorios y optimización, donde la exploración de todas las posibles soluciones genera costos computacionales prohibitivos.</p>
+<p>Desde una perspectiva práctica, la selección de un algoritmo debe priorizar su escalabilidad y eficiencia, especialmente en aplicaciones donde el procesamiento de datos a gran escala es un requisito clave. Minimizar la complejidad computacional es esencial para evitar tiempos de ejecución innecesariamente largos y garantizar la viabilidad de un sistema. En muchos casos, optimizar algoritmos existentes o recurrir a estrategias heurísticas puede ser la mejor alternativa para abordar problemas difíciles sin incurrir en tiempos de ejecución prohibitivos. La eficiencia algorítmica no solo afecta el rendimiento, sino que también determina si un problema computacional es resoluble en un tiempo razonable con los recursos disponibles.</p>
+</section>
+<section id="referencias" class="level1">
+<h1><strong>Referencias</strong></h1>
 <ul>
-<li><p>Aho, A. V., Hopcroft, J. E., &amp; Ullman, J. D. (1974). The Design and Analysis of Computer Algorithms. Addison-Wesley.</p></li>
-<li><p>Kleinberg, J., &amp; Tardos, É. (2005). Algorithm Design. Pearson Education.</p></li>
 <li><p>Cormen, T. H., Leiserson, C. E., Rivest, R. L., &amp; Stein, C. (2022). <em>Introduction to Algorithms</em> (4th ed.). MIT Press.</p></li>
-<li><p>Sedgewick, R., &amp; Wayne, K. (2011). <em>Algorithms</em> (4th ed.). Addison-Wesley.</p></li>
-<li><p>Goodrich, M. T., &amp; Tamassia, R. (2014). <em>Algorithm Design and Applications</em>. Wiley.</p></li>
+<li><p>Kleinberg, J., &amp; Tardos, É. (2005). Algorithm Design. Pearson Education.</p></li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
