@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algoritmos – Reportes</title>
+<title>Cambios Realizados en Algoritmos de Ordenamiento del reporte 2 – Reportes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -280,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Unidad 5</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cambios.html"> 
+    <a class="nav-link active" href="./cambios.html" aria-current="page"> 
 <span class="menu-text">Cambios</span></a>
   </li>  
 </ul>
@@ -300,7 +300,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#merge_sort" id="toc-merge_sort" class="nav-link active" data-scroll-target="#merge_sort">1. <code>merge_sort</code></a></li>
+  <li><a href="#bubble_sort" id="toc-bubble_sort" class="nav-link" data-scroll-target="#bubble_sort">2. <code>bubble_sort</code></a></li>
+  <li><a href="#quick_sort" id="toc-quick_sort" class="nav-link" data-scroll-target="#quick_sort">3. <code>quick_sort</code></a></li>
+  <li><a href="#cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4" id="toc-cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4" class="nav-link" data-scroll-target="#cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4">Cambio en <code>search_with_skiplist</code> para uso correcto de SkipList del reporte 4</a>
+  <ul class="collapse">
+  <li><a href="#la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist." id="toc-la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist." class="nav-link" data-scroll-target="#la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist.">1. La función <code>search_with_skiplist</code> realizaba una búsqueda secuencial sobre una lista ordenada, ignorando la estructura jerárquica de la SkipList.</a></li>
+  <li><a href="#ausencia-de-la-referencia-al-artículo-de-by." id="toc-ausencia-de-la-referencia-al-artículo-de-by." class="nav-link" data-scroll-target="#ausencia-de-la-referencia-al-artículo-de-by.">Ausencia de la referencia al artículo de B&amp;Y.</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -310,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algoritmos</h1>
+<h1 class="title">Cambios Realizados en Algoritmos de Ordenamiento del reporte 2</h1>
 </div>
 
 
@@ -327,11 +334,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<section id="merge_sort" class="level2">
+<h2 class="anchored" data-anchor-id="merge_sort">1. <code>merge_sort</code></h2>
+<p><strong>Cambio:</strong><br>
+Reescrito para evitar copias innecesarias, usando una versión in-place con índices y lista auxiliar.</p>
+<p><strong>Mejora:</strong><br>
+- Menor uso de memoria. - Mejor rendimiento en listas grandes.</p>
+</section>
+<section id="bubble_sort" class="level2">
+<h2 class="anchored" data-anchor-id="bubble_sort">2. <code>bubble_sort</code></h2>
+<p><strong>Cambio:</strong><br>
+Ahora es adaptativo: se detiene si no hubo intercambios en una pasada.</p>
+<p><strong>Mejora:</strong><br>
+- Menor tiempo en listas ya ordenadas. - Mejor caso reducido a O(n).</p>
+</section>
+<section id="quick_sort" class="level2">
+<h2 class="anchored" data-anchor-id="quick_sort">3. <code>quick_sort</code></h2>
+<p><strong>Cambio:</strong><br>
+Se implementó selección de pivote aleatorio.</p>
+<p><strong>Mejora:</strong><br>
+- Menor riesgo del peor caso O(n²). - Rendimiento más estable en listas con orden parcial.</p>
+<hr>
+</section>
+<section id="cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4" class="level2">
+<h2 class="anchored" data-anchor-id="cambio-en-search_with_skiplist-para-uso-correcto-de-skiplist-del-reporte-4">Cambio en <code>search_with_skiplist</code> para uso correcto de SkipList del reporte 4</h2>
+<section id="la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist." class="level3">
+<h3 class="anchored" data-anchor-id="la-función-search_with_skiplist-realizaba-una-búsqueda-secuencial-sobre-una-lista-ordenada-ignorando-la-estructura-jerárquica-de-la-skiplist.">1. La función <code>search_with_skiplist</code> realizaba una búsqueda secuencial sobre una lista ordenada, ignorando la estructura jerárquica de la SkipList.</h3>
+<p><strong>Cambio:</strong><br>
+- Se agregó el método <code>buscar()</code> a la clase <code>SkipListOrden</code> para usar los niveles de la estructura en la búsqueda. - <code>search_with_skiplist</code> ahora llama directamente a <code>buscar()</code>.</p>
+<p><strong>Mejora:</strong><br>
+La SkipList ahora funciona correctamente con eficiencia O(log n) y se diferencia claramente de la búsqueda secuencial. Además, las referencias teóricas están completas y correctamente citadas.</p>
+</section>
+<section id="ausencia-de-la-referencia-al-artículo-de-by." class="level3">
+<h3 class="anchored" data-anchor-id="ausencia-de-la-referencia-al-artículo-de-by.">Ausencia de la referencia al artículo de B&amp;Y.</h3>
+<p><strong>Cambio:</strong><br>
+- Se incluyó en las referencias el artículo de Bentley &amp; Yao (1976), y se citó en el análisis de los algoritmos no acotados.</p>
+<p>Asi mismo, los cambios en cuanto a código se ven reflejados sobre el reporte al tener las funciones con observaciones comentadas para vizualizar versiones anteriores.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
