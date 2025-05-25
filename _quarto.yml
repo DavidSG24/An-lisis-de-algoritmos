@@ -17,10 +17,8 @@ website:
         text: Unidad 4
       - href: SegundoDavid_U5_T1.ipynb
         text: Unidad 5
-      # - href: cambios.qmd
-      #   text: Cambios
-      # - href: referencias.qmd
-      #   text: Referencias
+      - href: cambios.ipynb
+        text: Cambios
 
 format:
   html:
