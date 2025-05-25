@@ -343,6 +343,10 @@ window.Quarto = {
     <a class="nav-link" href="./SegundoDavid_U5_T1.html"> 
 <span class="menu-text">Unidad 5</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cambios.html"> 
+<span class="menu-text">Cambios</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -361,32 +365,35 @@ window.Quarto = {
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><strong>Introducción</strong></a></li>
-  <li><a href="#instrucciones" id="toc-instrucciones" class="nav-link" data-scroll-target="#instrucciones"><strong>Instrucciones</strong>:</a>
+  <li><a href="#instrucciones" id="toc-instrucciones" class="nav-link" data-scroll-target="#instrucciones"><strong>Instrucciones</strong>:</a></li>
+  <li><a href="#solución" id="toc-solución" class="nav-link" data-scroll-target="#solución"><strong>Solución</strong></a>
   <ul class="collapse">
-  <li><a href="#definimos-las-librerías-que-usaremos" id="toc-definimos-las-librerías-que-usaremos" class="nav-link" data-scroll-target="#definimos-las-librerías-que-usaremos">Definimos las librerías que usaremos:</a></li>
-  <li><a href="#funcíon-para-cargar-datos-de-la-carpeta-zip" id="toc-funcíon-para-cargar-datos-de-la-carpeta-zip" class="nav-link" data-scroll-target="#funcíon-para-cargar-datos-de-la-carpeta-zip">Funcíon para cargar datos de la carpeta zip</a></li>
+  <li><a href="#definimos-las-librerías-que-usaremos" id="toc-definimos-las-librerías-que-usaremos" class="nav-link" data-scroll-target="#definimos-las-librerías-que-usaremos"><strong>Definimos las librerías que usaremos:</strong></a></li>
+  <li><a href="#funcíon-para-cargar-datos-de-la-carpeta-zip" id="toc-funcíon-para-cargar-datos-de-la-carpeta-zip" class="nav-link" data-scroll-target="#funcíon-para-cargar-datos-de-la-carpeta-zip"><strong>Funcíon para cargar datos de la carpeta zip</strong></a></li>
   </ul></li>
   <li><a href="#funciones-para-algoritmos-de-búsqueda" id="toc-funciones-para-algoritmos-de-búsqueda" class="nav-link" data-scroll-target="#funciones-para-algoritmos-de-búsqueda"><strong>Funciones para algoritmos de búsqueda</strong></a>
   <ul class="collapse">
+  <li><a href="#búsqueda-binaria-acotada" id="toc-búsqueda-binaria-acotada" class="nav-link" data-scroll-target="#búsqueda-binaria-acotada"><strong>Búsqueda Binaria Acotada:</strong></a></li>
   <li><a href="#busqueda-secuencial-b_0" id="toc-busqueda-secuencial-b_0" class="nav-link" data-scroll-target="#busqueda-secuencial-b_0"><strong>Busqueda Secuencial <span class="math inline">\(B_0\)</span>:</strong></a></li>
   <li><a href="#búsqueda-no-acotada-b_1" id="toc-búsqueda-no-acotada-b_1" class="nav-link" data-scroll-target="#búsqueda-no-acotada-b_1"><strong>Búsqueda No Acotada <span class="math inline">\(B_1\)</span>:</strong></a></li>
   <li><a href="#búsqueda-no-acotada-b_2" id="toc-búsqueda-no-acotada-b_2" class="nav-link" data-scroll-target="#búsqueda-no-acotada-b_2"><strong>Búsqueda no acotada <span class="math inline">\(B_2\)</span>:</strong></a></li>
-  <li><a href="#búsqueda-mediante-la-estructura-de-datos-skiplist" id="toc-búsqueda-mediante-la-estructura-de-datos-skiplist" class="nav-link" data-scroll-target="#búsqueda-mediante-la-estructura-de-datos-skiplist">Búsqueda mediante la estructura de datos <strong>SkipList</strong>:</a></li>
+  <li><a href="#búsqueda-mediante-la-estructura-de-datos-skiplist" id="toc-búsqueda-mediante-la-estructura-de-datos-skiplist" class="nav-link" data-scroll-target="#búsqueda-mediante-la-estructura-de-datos-skiplist"><strong>Búsqueda mediante la estructura de datos SkipList:</strong></a></li>
+  <li><a href="#preparación-de-datos-y-estructura-auxiliar-de-búsqueda" id="toc-preparación-de-datos-y-estructura-auxiliar-de-búsqueda" class="nav-link" data-scroll-target="#preparación-de-datos-y-estructura-auxiliar-de-búsqueda"><strong>Preparación de datos y estructura auxiliar de búsqueda</strong></a></li>
   </ul></li>
-  <li><a href="#preparación-de-datos-y-estructura-auxiliar-de-búsqueda" id="toc-preparación-de-datos-y-estructura-auxiliar-de-búsqueda" class="nav-link" data-scroll-target="#preparación-de-datos-y-estructura-auxiliar-de-búsqueda">Preparación de datos y estructura auxiliar de búsqueda</a></li>
-  <li><a href="#evaluación-de-algoritmos-de-búsqueda" id="toc-evaluación-de-algoritmos-de-búsqueda" class="nav-link" data-scroll-target="#evaluación-de-algoritmos-de-búsqueda">Evaluación de algoritmos de búsqueda</a></li>
-  <li><a href="#funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta" id="toc-funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta" class="nav-link" data-scroll-target="#funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta">Funciones para comparar los métodos implementados por archivo de consulta</a></li>
-  <li><a href="#tablas-de-calor-heatmaps-de-resultados" id="toc-tablas-de-calor-heatmaps-de-resultados" class="nav-link" data-scroll-target="#tablas-de-calor-heatmaps-de-resultados">Tablas de calor (heatmaps) de resultados</a></li>
-  <li><a href="#gráficos-de-barras-comparativos" id="toc-gráficos-de-barras-comparativos" class="nav-link" data-scroll-target="#gráficos-de-barras-comparativos">Gráficos de barras comparativos</a>
+  <li><a href="#evaluación-de-algoritmos-de-búsqueda" id="toc-evaluación-de-algoritmos-de-búsqueda" class="nav-link" data-scroll-target="#evaluación-de-algoritmos-de-búsqueda"><strong>Evaluación de algoritmos de búsqueda</strong></a>
   <ul class="collapse">
-  <li><a href="#tablas-de-calor-heatmaps-de-resultados-1" id="toc-tablas-de-calor-heatmaps-de-resultados-1" class="nav-link" data-scroll-target="#tablas-de-calor-heatmaps-de-resultados-1">Tablas de calor (heatmaps) de resultados</a></li>
-  <li><a href="#gráficos-de-barras-entre-algoritmos-de-búsqueda." id="toc-gráficos-de-barras-entre-algoritmos-de-búsqueda." class="nav-link" data-scroll-target="#gráficos-de-barras-entre-algoritmos-de-búsqueda.">Gráficos de barras entre algoritmos de búsqueda.</a></li>
+  <li><a href="#funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta" id="toc-funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta" class="nav-link" data-scroll-target="#funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta"><strong>Funciones para comparar los métodos implementados por archivo de consulta</strong></a></li>
+  <li><a href="#tablas-de-calor-heatmaps-de-resultados" id="toc-tablas-de-calor-heatmaps-de-resultados" class="nav-link" data-scroll-target="#tablas-de-calor-heatmaps-de-resultados"><strong>Tablas de calor (heatmaps) de resultados</strong></a></li>
+  <li><a href="#gráficos-de-barras-comparativos" id="toc-gráficos-de-barras-comparativos" class="nav-link" data-scroll-target="#gráficos-de-barras-comparativos"><strong>Gráficos de barras comparativos</strong></a></li>
+  <li><a href="#tablas-de-calor-heatmaps-de-resultados-1" id="toc-tablas-de-calor-heatmaps-de-resultados-1" class="nav-link" data-scroll-target="#tablas-de-calor-heatmaps-de-resultados-1"><strong>Tablas de calor (heatmaps) de resultados</strong></a></li>
+  <li><a href="#gráficos-de-barras-entre-algoritmos-de-búsqueda." id="toc-gráficos-de-barras-entre-algoritmos-de-búsqueda." class="nav-link" data-scroll-target="#gráficos-de-barras-entre-algoritmos-de-búsqueda."><strong>Gráficos de barras entre algoritmos de búsqueda.</strong></a></li>
   </ul></li>
-  <li><a href="#interpretación-de-los-resultados" id="toc-interpretación-de-los-resultados" class="nav-link" data-scroll-target="#interpretación-de-los-resultados">Interpretación de los Resultados</a></li>
-  <li><a href="#análisis-sobre-perturbaciones." id="toc-análisis-sobre-perturbaciones." class="nav-link" data-scroll-target="#análisis-sobre-perturbaciones.">Análisis sobre perturbaciones.</a>
+  <li><a href="#interpretación-de-los-resultados" id="toc-interpretación-de-los-resultados" class="nav-link" data-scroll-target="#interpretación-de-los-resultados"><strong>Interpretación de los Resultados</strong></a>
   <ul class="collapse">
-  <li><a href="#conclusiones-generales" id="toc-conclusiones-generales" class="nav-link" data-scroll-target="#conclusiones-generales">Conclusiones generales</a></li>
+  <li><a href="#análisis-para-consultas" id="toc-análisis-para-consultas" class="nav-link" data-scroll-target="#análisis-para-consultas"><strong>Análisis para consultas</strong></a></li>
+  <li><a href="#análisis-sobre-perturbaciones." id="toc-análisis-sobre-perturbaciones." class="nav-link" data-scroll-target="#análisis-sobre-perturbaciones.">Análisis sobre perturbaciones.</a></li>
   </ul></li>
+  <li><a href="#conclusiones-generales" id="toc-conclusiones-generales" class="nav-link" data-scroll-target="#conclusiones-generales"><strong>Conclusiones generales</strong></a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><strong>Referencias</strong></a></li>
   </ul>
 </nav>
@@ -405,8 +412,8 @@ window.Quarto = {
 <b>Alumno: David Segundo Garcia</b>
 </h1>
 <hr>
-<section id="introducción" class="level2">
-<h2 class="anchored" data-anchor-id="introducción"><strong>Introducción</strong></h2>
+<section id="introducción" class="level1">
+<h1><strong>Introducción</strong></h1>
 <p>Los algoritmos de búsqueda constituyen un componente esencial en la eficiencia de los sistemas de recuperación de información, estructuras de datos y procesamiento a gran escala. Su desempeño depende no solo de su complejidad teórica, sino también del tipo de datos sobre los que se aplican: ordenados, parcialmente ordenados o perturbados. Por ello, entender cómo se comportan en distintos contextos es fundamental para seleccionar la mejor estrategia algorítmica.</p>
 <p>Este estudio analiza experimentalmente cinco enfoques distintos de búsqueda: - Búsqueda <strong>binaria acotada</strong> - Búsqueda <strong>secuencial (B₀)</strong> - Búsqueda <strong>no acotada B₁ (doblando el índice)</strong> - Búsqueda <strong>no acotada B₂ (crecimiento más agresivo)</strong> - Búsqueda utilizando la estructura <strong>SkipList</strong> (Pugh, 1990)</p>
 <p>Para ello, se implementaron todos los algoritmos desde cero en Python, y se evaluaron usando archivos reales de consultas y listas de posteo con distintos grados de perturbación. Las pruebas se realizaron tanto en conjuntos de datos <strong>ordenados</strong> (consultas 1 a 4) como en datos con <strong>perturbaciones progresivas</strong> (niveles p016 a p512), simulando condiciones que podrían encontrarse en sistemas reales de búsqueda de documentos.</p>
@@ -415,8 +422,8 @@ window.Quarto = {
 <p>Este enfoque práctico permite evaluar no solo el rendimiento teórico, sino también su aplicabilidad en contextos dinámicos, donde los datos no siempre cumplen condiciones ideales. Así, se brinda una visión integral sobre qué algoritmo conviene utilizar en función del estado de los datos, sus propiedades estadísticas y las necesidades operacionales del sistema.</p>
 <hr>
 </section>
-<section id="instrucciones" class="level2">
-<h2 class="anchored" data-anchor-id="instrucciones"><strong>Instrucciones</strong>:</h2>
+<section id="instrucciones" class="level1">
+<h1><strong>Instrucciones</strong>:</h1>
 <ol type="1">
 <li><p><strong>Implementa</strong> y <strong>compara</strong> los siguientes algoritmos de búsqueda:</p>
 <ul>
@@ -435,11 +442,11 @@ window.Quarto = {
 <li><p><strong>Discuta</strong> sus resultados.</p></li>
 </ol>
 <hr>
-<h1>
-<b>Solución</b>
-</h1>
-<section id="definimos-las-librerías-que-usaremos" class="level3">
-<h3 class="anchored" data-anchor-id="definimos-las-librerías-que-usaremos">Definimos las librerías que usaremos:</h3>
+</section>
+<section id="solución" class="level1">
+<h1><strong>Solución</strong></h1>
+<section id="definimos-las-librerías-que-usaremos" class="level2">
+<h2 class="anchored" data-anchor-id="definimos-las-librerías-que-usaremos"><strong>Definimos las librerías que usaremos:</strong></h2>
 <div id="cell-5" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> zipfile</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
@@ -458,9 +465,9 @@ window.Quarto = {
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>drive.mount(<span class="st">'/content/drive'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="funcíon-para-cargar-datos-de-la-carpeta-zip" class="level3">
-<h3 class="anchored" data-anchor-id="funcíon-para-cargar-datos-de-la-carpeta-zip">Funcíon para cargar datos de la carpeta zip</h3>
-<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="f43306e5-177c-4f9d-d3aa-366ed5468f99" data-execution_count="50">
+<section id="funcíon-para-cargar-datos-de-la-carpeta-zip" class="level2">
+<h2 class="anchored" data-anchor-id="funcíon-para-cargar-datos-de-la-carpeta-zip"><strong>Funcíon para cargar datos de la carpeta zip</strong></h2>
+<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="f43306e5-177c-4f9d-d3aa-366ed5468f99">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> leer_contenido_zip(ruta_zip: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">dict</span>:</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Lee archivos JSON desde un archivo ZIP.</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -507,10 +514,11 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="funciones-para-algoritmos-de-búsqueda" class="level2">
-<h2 class="anchored" data-anchor-id="funciones-para-algoritmos-de-búsqueda"><strong>Funciones para algoritmos de búsqueda</strong></h2>
-<p>### <strong>Búsqueda Binaria Acotada:</strong></p>
-<div id="cell-10" class="cell" data-execution_count="38">
+<section id="funciones-para-algoritmos-de-búsqueda" class="level1">
+<h1><strong>Funciones para algoritmos de búsqueda</strong></h1>
+<section id="búsqueda-binaria-acotada" class="level2">
+<h2 class="anchored" data-anchor-id="búsqueda-binaria-acotada"><strong>Búsqueda Binaria Acotada:</strong></h2>
+<div id="cell-10" class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bounded_binary_search(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    lst: <span class="bu">list</span>,</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    key: <span class="bu">any</span>,</span>
@@ -540,9 +548,10 @@ window.Quarto = {
 <span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>            right <span class="op">=</span> mid <span class="op">-</span> <span class="dv">1</span></span>
 <span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span>, num_comparisons</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="busqueda-secuencial-b_0" class="level3">
-<h3 class="anchored" data-anchor-id="busqueda-secuencial-b_0"><strong>Busqueda Secuencial <span class="math inline">\(B_0\)</span>:</strong></h3>
-<div id="cell-12" class="cell" data-execution_count="39">
+</section>
+<section id="busqueda-secuencial-b_0" class="level2">
+<h2 class="anchored" data-anchor-id="busqueda-secuencial-b_0"><strong>Busqueda Secuencial <span class="math inline">\(B_0\)</span>:</strong></h2>
+<div id="cell-12" class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> linear_search_B0(sequence: <span class="bu">list</span>, target_value: <span class="bu">any</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Realiza una búsqueda secuencial.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -561,9 +570,9 @@ window.Quarto = {
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span>, num_comparisons</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="búsqueda-no-acotada-b_1" class="level3">
-<h3 class="anchored" data-anchor-id="búsqueda-no-acotada-b_1"><strong>Búsqueda No Acotada <span class="math inline">\(B_1\)</span>:</strong></h3>
-<div id="cell-14" class="cell" data-execution_count="40">
+<section id="búsqueda-no-acotada-b_1" class="level2">
+<h2 class="anchored" data-anchor-id="búsqueda-no-acotada-b_1"><strong>Búsqueda No Acotada <span class="math inline">\(B_1\)</span>:</strong></h2>
+<div id="cell-14" class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> unbounded_search_B1_recursive(arr: <span class="bu">list</span>, target: <span class="bu">any</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Búsqueda no acotada B1 (recursiva).</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -608,9 +617,9 @@ window.Quarto = {
 <span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> idx, total_comparisons</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="búsqueda-no-acotada-b_2" class="level3">
-<h3 class="anchored" data-anchor-id="búsqueda-no-acotada-b_2"><strong>Búsqueda no acotada <span class="math inline">\(B_2\)</span>:</strong></h3>
-<div id="cell-16" class="cell" data-execution_count="41">
+<section id="búsqueda-no-acotada-b_2" class="level2">
+<h2 class="anchored" data-anchor-id="búsqueda-no-acotada-b_2"><strong>Búsqueda no acotada <span class="math inline">\(B_2\)</span>:</strong></h2>
+<div id="cell-16" class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> unbounded_search_B2(arr: <span class="bu">list</span>, target: <span class="bu">any</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Búsqueda no acotada B2 (crecimiento agresivo).</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -645,9 +654,9 @@ window.Quarto = {
 <span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> index, total_comparisons</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="búsqueda-mediante-la-estructura-de-datos-skiplist" class="level3">
-<h3 class="anchored" data-anchor-id="búsqueda-mediante-la-estructura-de-datos-skiplist">Búsqueda mediante la estructura de datos <strong>SkipList</strong>:</h3>
-<div id="cell-18" class="cell" data-execution_count="42">
+<section id="búsqueda-mediante-la-estructura-de-datos-skiplist" class="level2">
+<h2 class="anchored" data-anchor-id="búsqueda-mediante-la-estructura-de-datos-skiplist"><strong>Búsqueda mediante la estructura de datos SkipList:</strong></h2>
+<div id="cell-18" class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Nodo:</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Representa un nodo en una SkipList.</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -762,14 +771,38 @@ window.Quarto = {
 <span id="cb8-112"><a href="#cb8-112" aria-hidden="true" tabindex="-1"></a>            nodo <span class="op">=</span> nodo.siguientes[<span class="dv">0</span>]</span>
 <span id="cb8-113"><a href="#cb8-113" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-114"><a href="#cb8-114" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Retorna la lista ordenada y el número de comparaciones realizadas</span></span>
-<span id="cb8-115"><a href="#cb8-115" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> resultado, <span class="va">self</span>.contador</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-115"><a href="#cb8-115" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> resultado, <span class="va">self</span>.contador</span>
+<span id="cb8-116"><a href="#cb8-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-117"><a href="#cb8-117" aria-hidden="true" tabindex="-1"></a><span class="co">######  Se añade este método a la clase</span></span>
+<span id="cb8-118"><a href="#cb8-118" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> buscar(<span class="va">self</span>, valor: <span class="bu">any</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
+<span id="cb8-119"><a href="#cb8-119" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""</span></span>
+<span id="cb8-120"><a href="#cb8-120" aria-hidden="true" tabindex="-1"></a><span class="co">        Busca un valor en la SkipList utilizando sus niveles de acceso.</span></span>
+<span id="cb8-121"><a href="#cb8-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-122"><a href="#cb8-122" aria-hidden="true" tabindex="-1"></a><span class="co">        Args:</span></span>
+<span id="cb8-123"><a href="#cb8-123" aria-hidden="true" tabindex="-1"></a><span class="co">            valor (any): Valor a buscar.</span></span>
+<span id="cb8-124"><a href="#cb8-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-125"><a href="#cb8-125" aria-hidden="true" tabindex="-1"></a><span class="co">        Returns:</span></span>
+<span id="cb8-126"><a href="#cb8-126" aria-hidden="true" tabindex="-1"></a><span class="co">            tuple: True/False si se encuentra y número de comparaciones realizadas.</span></span>
+<span id="cb8-127"><a href="#cb8-127" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb8-128"><a href="#cb8-128" aria-hidden="true" tabindex="-1"></a>        actual <span class="op">=</span> <span class="va">self</span>.cabeza</span>
+<span id="cb8-129"><a href="#cb8-129" aria-hidden="true" tabindex="-1"></a>        comparaciones <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-130"><a href="#cb8-130" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> nivel <span class="kw">in</span> <span class="bu">range</span>(<span class="va">self</span>.nivel_actual, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb8-131"><a href="#cb8-131" aria-hidden="true" tabindex="-1"></a>            <span class="cf">while</span> actual.siguientes[nivel] <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> actual.siguientes[nivel].valor <span class="op">&lt;</span> valor:</span>
+<span id="cb8-132"><a href="#cb8-132" aria-hidden="true" tabindex="-1"></a>                actual <span class="op">=</span> actual.siguientes[nivel]</span>
+<span id="cb8-133"><a href="#cb8-133" aria-hidden="true" tabindex="-1"></a>                comparaciones <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb8-134"><a href="#cb8-134" aria-hidden="true" tabindex="-1"></a>        actual <span class="op">=</span> actual.siguientes[<span class="dv">0</span>]</span>
+<span id="cb8-135"><a href="#cb8-135" aria-hidden="true" tabindex="-1"></a>        comparaciones <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb8-136"><a href="#cb8-136" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> actual <span class="kw">and</span> actual.valor <span class="op">==</span> valor:</span>
+<span id="cb8-137"><a href="#cb8-137" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">True</span>, comparaciones</span>
+<span id="cb8-138"><a href="#cb8-138" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span>, comparaciones</span>
+<span id="cb8-139"><a href="#cb8-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-140"><a href="#cb8-140" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-</section>
 <section id="preparación-de-datos-y-estructura-auxiliar-de-búsqueda" class="level2">
-<h2 class="anchored" data-anchor-id="preparación-de-datos-y-estructura-auxiliar-de-búsqueda">Preparación de datos y estructura auxiliar de búsqueda</h2>
+<h2 class="anchored" data-anchor-id="preparación-de-datos-y-estructura-auxiliar-de-búsqueda"><strong>Preparación de datos y estructura auxiliar de búsqueda</strong></h2>
 <p>Este bloque de código se encarga de procesar los conjuntos de datos originales (consultas y listas con perturbaciones), organizando los términos de forma ordenada y eliminando duplicados. Además, crea instancias de la estructura SkipListOrden para cada conjunto, facilitando una estrategia de búsqueda eficiente. También se define una función auxiliar <code>search_with_skiplist</code> que permite realizar búsquedas secuenciales sobre la lista ordenada generada por la SkipList sin modificar la clase original.</p>
-<div id="cell-20" class="cell" data-execution_count="43">
+<div id="cell-20" class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> preparar_datos(datos: <span class="bu">dict</span> <span class="op">|</span> <span class="bu">list</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Prepara términos y documentos a partir de datos.</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -821,28 +854,44 @@ window.Quarto = {
 <span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        lista_orden.insertar(termino)</span>
 <span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>    skip_lists_orden[nombre] <span class="op">=</span> lista_orden</span>
 <span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> search_with_skiplist(skip_list: SkipListOrden, target: <span class="bu">any</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Busca un valor usando la lista ordenada de una SkipList.</span></span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a><span class="co"># def search_with_skiplist(skip_list: SkipListOrden, target: any) -&gt; tuple:</span></span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a><span class="co">#     """Busca un valor usando la lista ordenada de una SkipList.</span></span>
 <span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="co">        skip_list (SkipListOrden): Instancia de SkipList ya construida.</span></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="co">        target (any): Valor a buscar.</span></span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a><span class="co">#     Args:</span></span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="co">#         skip_list (SkipListOrden): Instancia de SkipList ya construida.</span></span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="co">#         target (any): Valor a buscar.</span></span>
 <span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a><span class="co">        tuple: Índice del valor (o -1) y número de comparaciones (int).</span></span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Llama solo para obtener la lista ordenada</span></span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>    sorted_terms, _ <span class="op">=</span> skip_list.ordenar([])</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>    comparisons <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, val <span class="kw">in</span> <span class="bu">enumerate</span>(sorted_terms):</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>        comparisons <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> val <span class="op">==</span> target:</span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> i, comparisons</span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span>, comparisons</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a><span class="co">#     Returns:</span></span>
+<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a><span class="co">#         tuple: Índice del valor (o -1) y número de comparaciones (int).</span></span>
+<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a><span class="co">#     """</span></span>
+<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a><span class="co">#     # Llama solo para obtener la lista ordenada</span></span>
+<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a><span class="co">#     sorted_terms, _ = skip_list.ordenar([])</span></span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a><span class="co">#     comparisons = 0</span></span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a><span class="co">#     for i, val in enumerate(sorted_terms):</span></span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a><span class="co">#         comparisons += 1</span></span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a><span class="co">#         if val == target:</span></span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a><span class="co">#             return i, comparisons</span></span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a><span class="co">#     return -1, comparisons</span></span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> search_with_skiplist(skip_list: SkipListOrden, target: <span class="bu">any</span>) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
+<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a><span class="co">    Realiza búsqueda en SkipList usando su estructura interna (no secuencial).</span></span>
+<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="co">        skip_list (SkipListOrden): Instancia ya construida.</span></span>
+<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a><span class="co">        target (any): Valor a buscar.</span></span>
+<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a><span class="co">        tuple: Índice simulado (-1 si no se encuentra) y comparaciones.</span></span>
+<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>    encontrado, comparaciones <span class="op">=</span> skip_list.buscar(target)</span>
+<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (<span class="dv">0</span> <span class="cf">if</span> encontrado <span class="cf">else</span> <span class="op">-</span><span class="dv">1</span>), comparaciones</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="evaluación-de-algoritmos-de-búsqueda" class="level2">
-<h2 class="anchored" data-anchor-id="evaluación-de-algoritmos-de-búsqueda">Evaluación de algoritmos de búsqueda</h2>
+</section>
+<section id="evaluación-de-algoritmos-de-búsqueda" class="level1">
+<h1><strong>Evaluación de algoritmos de búsqueda</strong></h1>
 <p>Este bloque implementa la lógica necesaria para medir el rendimiento de los algoritmos de búsqueda: - <strong>Binaria</strong> - <strong>Secuencial (<span class="math inline">\(B_0\)</span>)</strong> - <strong>No acotada <span class="math inline">\(B_1\)</span> y <span class="math inline">\(B_2\)</span></strong> - <strong>SkipList</strong></p>
 <p>Incluye tres funciones principales:</p>
 <ul>
@@ -850,7 +899,7 @@ window.Quarto = {
 <li><code>evaluate_single_query</code>: Ejecuta todos los algoritmos sobre una única consulta y recopila los resultados.</li>
 <li><code>evaluate_search_algorithms</code>: Evalúa un conjunto completo de consultas y</li>
 </ul>
-<div id="cell-22" class="cell" data-execution_count="44">
+<div id="cell-22" class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> measure_execution(func: <span class="bu">callable</span>, <span class="op">*</span>args, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">tuple</span>:</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Mide tiempo de ejecución y comparaciones.</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -962,10 +1011,9 @@ window.Quarto = {
 <span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> aggregate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
 <section id="funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta" class="level2">
-<h2 class="anchored" data-anchor-id="funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta">Funciones para comparar los métodos implementados por archivo de consulta</h2>
-<div id="cell-24" class="cell" data-execution_count="45">
+<h2 class="anchored" data-anchor-id="funciones-para-comparar-los-métodos-implementados-por-archivo-de-consulta"><strong>Funciones para comparar los métodos implementados por archivo de consulta</strong></h2>
+<div id="cell-24" class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate_dataset_alternative(</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    dataset_key: <span class="bu">str</span>,</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    custom_queries: <span class="bu">list</span> <span class="op">=</span> <span class="va">None</span></span>
@@ -1010,9 +1058,9 @@ window.Quarto = {
 </div>
 </section>
 <section id="tablas-de-calor-heatmaps-de-resultados" class="level2">
-<h2 class="anchored" data-anchor-id="tablas-de-calor-heatmaps-de-resultados">Tablas de calor (heatmaps) de resultados</h2>
+<h2 class="anchored" data-anchor-id="tablas-de-calor-heatmaps-de-resultados"><strong>Tablas de calor (heatmaps) de resultados</strong></h2>
 <p>Esta función genera visualizaciones tipo heatmap para mostrar los tiempos de ejecución y comparaciones promedio por algoritmo. Permite comparar fácilmente el rendimiento de búsqueda en diferentes conjuntos de consultas y niveles de perturbación.</p>
-<div id="cell-26" class="cell" data-execution_count="48">
+<div id="cell-26" class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_results_tables_modern(</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    consultas_results: <span class="bu">list</span>,</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    perturbaciones_results: <span class="bu">list</span></span>
@@ -1138,9 +1186,9 @@ window.Quarto = {
 </div>
 </section>
 <section id="gráficos-de-barras-comparativos" class="level2">
-<h2 class="anchored" data-anchor-id="gráficos-de-barras-comparativos">Gráficos de barras comparativos</h2>
+<h2 class="anchored" data-anchor-id="gráficos-de-barras-comparativos"><strong>Gráficos de barras comparativos</strong></h2>
 <p>Esta función visualiza el rendimiento de los algoritmos de búsqueda mediante gráficos de barras. Compara tiempo de ejecución y número de comparaciones en conjuntos de consultas y perturbaciones, permitiendo observar fácilmente las diferencias entre binaria, secuencial, no acotadas y SkipList.</p>
-<div id="cell-28" class="cell" data-execution_count="46">
+<div id="cell-28" class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_bar_results_modern(</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    consultas_results: <span class="bu">list</span>,</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    perturbaciones_results: <span class="bu">list</span></span>
@@ -1261,9 +1309,10 @@ window.Quarto = {
 <span id="cb13-118"><a href="#cb13-118" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout(rect<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.95</span>])</span>
 <span id="cb13-119"><a href="#cb13-119" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="tablas-de-calor-heatmaps-de-resultados-1" class="level3">
-<h3 class="anchored" data-anchor-id="tablas-de-calor-heatmaps-de-resultados-1">Tablas de calor (heatmaps) de resultados</h3>
-<div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="4f7a8edb-279f-416c-d471-f15d9398d9e0" data-execution_count="49">
+</section>
+<section id="tablas-de-calor-heatmaps-de-resultados-1" class="level2">
+<h2 class="anchored" data-anchor-id="tablas-de-calor-heatmaps-de-resultados-1"><strong>Tablas de calor (heatmaps) de resultados</strong></h2>
+<div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="4f7a8edb-279f-416c-d471-f15d9398d9e0">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>consultas_results <span class="op">=</span> [results1, results2, results3, results4]</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>perturbaciones_results <span class="op">=</span> [</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    results_p016,</span>
@@ -1305,9 +1354,9 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="gráficos-de-barras-entre-algoritmos-de-búsqueda." class="level3">
-<h3 class="anchored" data-anchor-id="gráficos-de-barras-entre-algoritmos-de-búsqueda.">Gráficos de barras entre algoritmos de búsqueda.</h3>
-<div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="0cbbb5c8-7905-4b59-86ca-d9aa51cb5345" data-execution_count="47">
+<section id="gráficos-de-barras-entre-algoritmos-de-búsqueda." class="level2">
+<h2 class="anchored" data-anchor-id="gráficos-de-barras-entre-algoritmos-de-búsqueda."><strong>Gráficos de barras entre algoritmos de búsqueda.</strong></h2>
+<div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="0cbbb5c8-7905-4b59-86ca-d9aa51cb5345">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generación de gráficos entre algoritmos de búsqueda</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>consultas_results <span class="op">=</span> [results1, results2, results3, results4]</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>perturbaciones_results <span class="op">=</span> [</span>
@@ -1330,11 +1379,11 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="interpretación-de-los-resultados" class="level2">
-<h2 class="anchored" data-anchor-id="interpretación-de-los-resultados">Interpretación de los Resultados</h2>
+<section id="interpretación-de-los-resultados" class="level1">
+<h1><strong>Interpretación de los Resultados</strong></h1>
 <p>Los resultados obtenidos permiten analizar con claridad el comportamiento de diversos algoritmos de búsqueda bajo dos tipos de escenarios: <strong>consultas sobre listas ordenadas</strong> y <strong>consultas sobre listas con distintos niveles de perturbación</strong>. Se evaluó el rendimiento en términos de <strong>tiempo de ejecución</strong> (en segundos) y <strong>número de comparaciones promedio</strong> por búsqueda, brindando una comparación empírica que refuerza las propiedades teóricas de cada técnica.</p>
-<hr>
-<p>##Análisis para consultas</p>
+<section id="análisis-para-consultas" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-para-consultas"><strong>Análisis para consultas</strong></h2>
 <ul>
 <li><p><strong>La búsqueda binaria</strong> demostró ser altamente eficiente, con tiempos muy bajos (entre <code>2.5e-6</code> y <code>4.3e-6</code> segundos) y un número de comparaciones que se mantuvo relativamente bajo (de <strong>3.4 a 12.1</strong> en promedio). Esto confirma su desempeño óptimo en arreglos ordenados y valida su complejidad de <strong>O(log n)</strong>. La eficiencia se mantuvo estable en todos los archivos de consulta, lo cual respalda su uso como método preferido cuando el tamaño del conjunto es conocido y los datos están ordenados (<em>Cormen et al., 2022</em>).</p></li>
 <li><p><strong>La búsqueda secuencial (B₀)</strong> mostró el rendimiento más bajo entre todos los métodos evaluados. Sus tiempos fueron significativamente más altos (alrededor de <code>0.00037</code> a <code>0.00041</code> segundos) y el número de comparaciones fue extremadamente alto (<strong>4688 a 5000</strong>), en concordancia con su complejidad <strong>O(n)</strong>. Este resultado es consistente con la literatura (<em>Bentley &amp; McGeoch, 1985</em>), que posiciona esta estrategia como subóptima en conjuntos grandes o cuando se requiere eficiencia.</p></li>
@@ -1358,8 +1407,10 @@ Fue ligeramente más eficiente que B₁ con <strong>9.2 comparaciones</strong>, 
 Aunque su diseño sugiere buena adaptabilidad, el rendimiento fue equivalente a B₀ (<strong>50.5 comparaciones</strong>) con tiempos mayores (<code>1.4e-5</code> a <code>1.6e-5</code> segundos). En este experimento, su acceso probabilístico no logró mitigar el impacto del desorden, probablemente porque los datos no favorecían su reorganización progresiva (<em>Pugh, 1990</em>).</p></li>
 </ul>
 <hr>
-<section id="conclusiones-generales" class="level3">
-<h3 class="anchored" data-anchor-id="conclusiones-generales">Conclusiones generales</h3>
+</section>
+</section>
+<section id="conclusiones-generales" class="level1">
+<h1><strong>Conclusiones generales</strong></h1>
 <ul>
 <li>Para listas <strong>ordenadas y de tamaño conocido</strong>, la <strong>búsqueda binaria</strong> es la mejor opción por su rapidez, bajo número de comparaciones y resistencia incluso a pequeños niveles de perturbación.</li>
 <li>En escenarios <strong>sin orden o sin tamaño conocido</strong>, las <strong>búsquedas no acotadas</strong> (especialmente B₂) ofrecen un buen compromiso entre adaptabilidad y eficiencia, logrando hasta <strong>60% menos comparaciones</strong> que la secuencial.</li>
@@ -1368,19 +1419,17 @@ Aunque su diseño sugiere buena adaptabilidad, el rendimiento fue equivalente a 
 </ul>
 <hr>
 </section>
-</section>
-<section id="referencias" class="level2">
-<h2 class="anchored" data-anchor-id="referencias"><strong>Referencias</strong></h2>
+<section id="referencias" class="level1">
+<h1><strong>Referencias</strong></h1>
 <ul>
-<li>Cook, C. R., &amp; Kim, D. J. (1980). Best sorting algorithm for nearly sorted lists. <em>Communications of the ACM, 23</em>(11), 620–628.<br>
-</li>
+<li>Cook, C. R., &amp; Kim, D. J. (1980). Best sorting algorithm for nearly sorted lists. <em>Communications of the ACM, 23</em>(11), 620–628.</li>
+<li>Bentley, J. L., &amp; Yao, A. C. (1976). An almost optimal algorithm for unbounded searching. <em>Information Processing Letters</em>, 5(3), 82–87.</li>
 <li>Estivill-Castro, V., &amp; Wood, D. (1992). A survey of adaptive sorting algorithms. <em>ACM Computing Surveys, 24</em>(4), 441–476.<br>
 </li>
 <li>Fosdick, L. D., &amp; Cline, A. K. (Eds.). (1974). <em>Some performance tests of “quicksort” and descendants</em>. Smithsonian Astrophysical Observatory.<br>
 </li>
 <li>Pugh, W. (1990). Skip lists: A probabilistic alternative to balanced trees. <em>Communications of the ACM, 33</em>(6), 668–676.</li>
 </ul>
-<hr>
 
 
 </section>
